@@ -15,7 +15,7 @@
         
         .container {
             /* Target those elements containing class (dot) called 'container' */
-            display: flex;
+            display: flex-grow;
             /* This is the magic to make the 2 div align horizontally */
             height: 75vh;
             width : 125vw;
@@ -25,12 +25,12 @@
 
         .container .box {
             /* All the .box under .container */
-            width: 30%;
+            width: 35%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
-            height: 40%;
+            height: 110%;
             display: flex;
             /* refer here to get more details about flex usage: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-            align-items: right;
+            align-items: left;
             /* vertically center */
         }
 
@@ -38,18 +38,27 @@
             /* All the div under .box */
             width: 100%;
             overflow: hidden;
+            
         }
 
         #box2 {
             text-align: right;
-            background-image: url("images/homework1pic.png");
+            
+            position: absolute;
+            right:63%;
+            top:35%;
+        }
+        #box3 {
+            text-align: left;
+            background-image: url("/images/homework1pic.png");
             background-size: cover;
             background-position: center center;
             
             position: absolute;
-            right:60%;
+            left:83%;
             top:35%;
         }
+
 
         h1 {
             padding: 10px;
@@ -73,9 +82,11 @@
         </div>
         
         <div id="box2" class="box">
-            <h6>Furniture, decor, and beyond</h6>
-            <img src="images/homework1pic.png">
-            
+            <h6>Furniture, decor, and beyond</h6>            
+        </div>
+
+        <div id="box3" class="box">
+            <img src="/images/homework1pic.png">
         </div>
     </div>
 </body>
