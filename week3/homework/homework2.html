@@ -20,30 +20,21 @@
 
         .container {
             /* Target those elements containing class (dot) called 'container' */
-            display: flex-grow;
+            display: flex ;
             /* This is the magic to make the 2 div align horizontally */
             height: 80vh;
             /* 80% height of the full page */
-        }
-
-        .container .box {
-            /* All the .box under .container */
-            width: 50%;
-            /* Each column would takes up 50%, so equally sharing spaces left and right */
-
-            display: flex;
-            /* refer here to get more details about flex usage: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-            align-items: center;
-            /* vertically center */
+            justify-content: space-evenly;
         }
 
         .box div {
+            float: left;
             width: 25%;
-            top:80%;
-            left: 50%
+            padding: 5px;
+            top:30%;
         }
 
-        #box2 {
+        #box2{
             width: 25%;
             text-align: center;
             left:50%
@@ -69,16 +60,6 @@
             left:50%
         }
         #box7{
-            width: 25%;
-            text-align: center;
-            left:50%
-        }
-        #box8{
-            width: 25%;
-            text-align: center;
-            left:50%
-        }
-        #box9{
             width: 25%;
             text-align: center;
             left:50%
@@ -110,11 +91,14 @@
         </div>
     </div>
     <div class="container">
-        <div id="box1" class="box">
-            <img src="" />
+        <div class="box">
+            <img src="../images/homework2pic1.png" />
         </div>
-        <div id="box2" class="box">
-            <div>Box 2</div>
+        <div class="box">
+            <img src="../images/homework2pic2.png" />
+        </div>
+        <div class="box">
+            <img src="../images/homework2pic3.png" />
         </div>
     </div>
 </body>
