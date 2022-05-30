@@ -12,58 +12,59 @@
         }
 
         .container {
-            display: flex-grow;
-            margin:6%;
-            height: 90vh;
-            width : 100vw;
-            text-align : left;
 
+            margin:18%;
+            height: 90vh;
+            width :auto;
+            text-align : center;
+            position: absolute;
+            font-size:23px;
+            padding: 10px;
+            margin-left:12%;
         }
 
-        .container .box {
-            width: 50%;
-            height: 100%;
+        .titlebox {
+            width: 40%;
+            text-align: center;
             display: flex-grow;
-            align-items: left; 
             margin-left: 5%;
+            position: absolute;
         }
 
         .box div {
-            width: 25%;
+            position:absolute;
+            width:max-content;
             text-align: center;
-
-        }
-
-        #box2 {
-            text-align: center;
-            position: absolute;
-            top:44%;
-            font-size: 25px;
+            margin-right: 0%;
+            margin-top: 30%;
         }
 
         #box3 {
-            text-align: left;
+            padding-right:80px;
+            text-align:right;
             position: absolute;
-            left:55%;
-            top:10%;
+            left:130%;
+            bottom:50%;
             border: 2px;
             border-color: rgb(255,255,255);
             border-right-style: solid;
+            width: max-content;
+            align-items: left;
 
         }
 
 
-        h3 {
-            padding: 25px;
+        h4 {
+            padding-top: 120px;
             text-align:center;
-            padding-bottom: 500px;
+            padding-bottom: 350px;
             color:white;
             border: 2px;
             border-color: rgb(255,255,255);
             border-style: solid;
             border-top :none;
             border-bottom: none;
-
+            
         }
 
     
@@ -78,18 +79,16 @@
 </head>
 
 <body>
-  
-    <div class="container">
+    <div class="titlebox">
+        <h4 style="color:white">WO WE ARE</h4>
+    </div>
+    <div class="container">      
         <div id="box1" class="box">
-            <h3 style="color:white">WO WE ARE</h3>
-        </div>
-        
-        <div id="box2" class="box">
-            <p style="color:whitesmoke">Minitmade Online offers a well-curated <br>range of fashion items for men and <br>women.</p><br><p style="color:whitesmoke">We aim to provide an enjoyable shopping<br> experience for all our customers.</p>            
+            <p style="color:whitesmoke">Minitmade Online offers a well-curated <br>range of fashion items for men and <br>women.</p><p style="color:whitesmoke">We aim to provide an enjoyable shopping<br> experience for all our customers.</p>            
         </div>
 
         <div id="box3" class="box">
-            <img src="../images/homework4pic.png" >
+            <img src="../images/homework4pic.png" width="85%" >
         </div>
     </div>
 </body>
