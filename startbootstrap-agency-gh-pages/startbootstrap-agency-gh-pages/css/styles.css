@@ -4000,7 +4000,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ffc800;
+  background-color: #60dcac; 
 }
 
 .nav-fill > .nav-link,
@@ -4836,7 +4836,7 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #ffc800;
+  background-color: #60dcac; 
   border-color: #ffc800;
 }
 .page-item.disabled .page-link {
