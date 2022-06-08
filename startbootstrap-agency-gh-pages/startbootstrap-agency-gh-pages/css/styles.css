@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: #d44a4a;
   text-decoration: underline;
 }
 a:hover {
-  color: #cca000;
+  color: #9a5e8c;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3036,8 +3036,8 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #8ad295;
-  border-color: #93e087;
+  background-color: #4569d5;
+  border-color: #132abe;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
