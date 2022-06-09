@@ -3,8 +3,9 @@
     max-width: 1024PX;  /* for responsive screen size */
     margin: auto; /*for box auto go center*/
 }
-.header {
-    background-color: #F1F1F1;
-    text-align: center;
+
+#header {
+    background-color: #2ee6ca;
+    text-align:center;
     padding: 20px;
 }
