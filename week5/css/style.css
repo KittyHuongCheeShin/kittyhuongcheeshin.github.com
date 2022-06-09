@@ -1,7 +1,8 @@
 #container {
-    background-color: #F1F1F1;
+    background-color: #85f80a;
     max-width: 1024PX;  /* for responsive screen size */
     margin: auto; /*for box auto go center*/
+    padding: 10px;
 }
 
 #header {
