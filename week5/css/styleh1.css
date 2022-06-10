@@ -5,20 +5,62 @@
     padding: 10px;
 }
 
+
+/* Header Box */
 .header {
     display: flex;
     text-align: center;
     background-color:aliceblue;
     justify-content: space-between;
     align-items: center;
+    padding :20px;
 }
-
+/* HeaderBox-Logo */
 #logo {
     padding : 5px;
     background-color: azure;
 }
-
+/* HeaderBox-Phone */
 #phone {
     background-color: azure;
     padding :5px;
+}
+#phone h2 {
+    margin : 0%;
+}
+#phone a {
+    text-decoration: none;
+    color :rgb(1, 50, 80);
+}
+#phone a:hover{
+    text-decoration: underline;
+    color: rgb(98, 132, 98);
+}
+
+
+/* Menu Box */
+.menu {
+    display: flex;
+    background-color: #3a3b3c;
+    text-align: center;
+    justify-content: flex-end;
+}
+.menu a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 14px 25px;
+}
+.menu a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+/* MenuBox-3sub boxes */
+#imageb{
+    display: flex;
+}
+#featb{
+    display: flex;
+}
+#moreb {
+    display: flex;
 }
