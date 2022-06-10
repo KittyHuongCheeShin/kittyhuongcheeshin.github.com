@@ -1,0 +1,24 @@
+.container {
+    background-color: aliceblue;
+    width: 1024px;
+    margin: auto;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    background-color:aliceblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    padding : 5px;
+    background-color: azure;
+}
+
+#phone {
+    background-color: azure;
+    padding :5px;
+}
