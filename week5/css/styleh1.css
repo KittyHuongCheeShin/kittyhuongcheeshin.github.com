@@ -67,36 +67,51 @@
 
 
 /*Image SlideShow*/
-.image-container {
+.slidebox {
     text-align: center;
     width: 1000px;
-    position: relative;
     margin: auto;
-    flex-wrap: wrap;
-
+    overflow: hidden;
 }
-.imagebox{
-    display: flex;
-    text-align: center;
+.imgbox {
+    width: max-content;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slide-image {
+    float: left;
+    margin: 0%;
+    padding: 0%;
 }
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
+    top: -40px;
+    position: relative;
+}
+.slider-dot {
     display: inline-block;
-    transition: background-color 0.6s ease;
-    text-align: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: rgb(198, 189, 189);
 }
-.active {
-    background-color: #717171;
+#slider-image-1 :target ~ .imgbox {
+    left: 0px;
 }
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+#slider-image-2 :target ~ .imgbox {
+    left: -1000px;
 }
-@keyframes fade {
-    from {opacity: .7}
-    to {opacity: 1;}
+#slider-image-3 :target ~ .imgbox {
+    left: -2000px;
+}
+#slider-image-4 :target ~ .imgbox {
+    left: -3000px;
+}
+#slider-image-5 :target ~ .imgbox {
+    left: -4000px;
+}
+#slider-image-6 :target ~ .imgbox {
+    left: -5000px;
 }
