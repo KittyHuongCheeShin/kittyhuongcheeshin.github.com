@@ -1,6 +1,6 @@
 .container {
     background-color: aliceblue;
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     padding: 10px;
 }
@@ -67,7 +67,7 @@
 
 
 /*Image SlideShow*/
-.slidebox {
+#slidebox {
     text-align: center;
     margin: auto;
 }
@@ -75,8 +75,8 @@ h1 {
     padding: 20px 25px;
 }
 .slides {
-    padding: 0;
-    width: 800px;
+    padding-left: 1px;
+    width: 984px;
     height: 550px;
     display: block;
     margin: 0 auto;
@@ -96,7 +96,7 @@ h1 {
 .slide {
     top: 0;
     opacity: 0;
-    width: 800px;
+    width: 984px;
     height: 550px;
     display: block;
     position: absolute;
@@ -166,8 +166,132 @@ input:checked + .slide-container .nav label { display: block; }
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-3:checked ~ .nav-dots label#img-dot-4 {
   background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*Feat Box*/
+#feat {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    margin-top: 2.5%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.featbox {
+    display: block;
+    margin: auto;
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: max-content;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+  }
+  /* When you mouse over the container, fade in the overlay title */
+  .featbox:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+/*More Box*/
+#more {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px;
+    margin-top: 2%;
+    position: relative;
+}
+/*TextContent Box*/
+.textcontent {
+    margin: auto;
+    width : 65%;
+    border : 3px;
+    border-color:rgb(171, 171, 241);
+    border-style: outset;
+    padding: 5px;
+}
+.textcontent b {
+    font-size:xx-large;
+}
+.textcontent h3, p {
+    margin: 1%;
+}
+/*SideBar Box*/
+.sidebar {
+    display: block;
+    width : max-content;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+.sidebar:hover .overlay {
+    opacity: 1;
+}
+
+
+/*Footer*/
+.footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5% ;
+}
+
+.button {
+    display: flex;
+    background-color: rgb(51, 130, 221);
+    color :black;
+    font-size: larger;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bolder ;
+    margin: auto;
+}
+.button:hover {
+    text-decoration: double;
+    color: rgb(176, 255, 227);
+}
+
+.copyright {
+    display: flex;
+    text-align: bottom;
+    margin: auto;
+    width: 30%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #feat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #more {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
