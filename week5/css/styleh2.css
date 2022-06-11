@@ -1,0 +1,71 @@
+.container{
+    max-width: 1024px;
+    background-color: cornsilk;
+    padding: 10px;
+    margin: auto;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+/*Left- Logo*/
+#logo {
+    padding: 5px;
+}
+/*Right- Hp & Menu*/
+.rightb {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    width: min-content;
+}
+/*Right- Hp*/
+#hp {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5%;
+}
+#hp h2 {
+    margin : 0%;
+}
+#hp a {
+    text-decoration: none;
+    color :rgb(95, 68, 11);
+}
+#hp a:hover{
+    text-decoration: underline;
+    color: rgb(98, 132, 98);
+}
+/*Right- Menu*/
+#menu {
+    display: flex;
+    margin-top: 3%;
+    justify-content: right;
+    background-color: rgba(0, 0, 0, 0.662);
+}
+#menu a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 14px 25px;
+}
+#menu a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+/* MenuBox-3sub boxes */
+#menub{
+    display: flex;
+}
+#imageb{
+    display: flex;
+}
+#moreb {
+    display: flex;
+}
