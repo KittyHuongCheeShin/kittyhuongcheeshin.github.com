@@ -116,51 +116,7 @@
     float: left;
 }
 
-@keyframes slider {
-    0% {
-        left: 0;
-    }
 
-    10% {
-        left: 0;
-    }
-
-    20% {
-        left: -100%;
-    }
-
-    30% {
-        left: -200%;
-    }
-
-    40% {
-        left: -300%;
-    }
-
-    50% {
-        left: -400%;
-    }
-
-    60% {
-        left: -500%;
-    }
-
-    70% {
-        left: -600%;
-    }
-
-    80% {
-        left: -700%;
-    }
-
-    90% {
-        left: -800%;
-    }
-
-    100% {
-        left: -900%;
-    }
-}
 
 /*Another Type 
 @import url(https://fonts.googleapis.com/css?family=Istok+Web);
@@ -228,6 +184,7 @@ figure.slider figure figcaption {
 /*More Box*/
 #more {
     margin-top: 5%;
+    text-align: center;
 }
 
 #more h1 {
@@ -244,6 +201,7 @@ figure.slider figure figcaption {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    align-items: center;
 }
 
 .text {
@@ -252,14 +210,16 @@ figure.slider figure figcaption {
     border-color: rgb(224, 171, 144);
     width: 65%;
     padding: 5px;
+    text-align: justify;
 }
 
 .side {
     margin: auto;
-    width: 35%;
+    width: max-content;
     text-align: center;
     position: relative;
     padding-left: 15px;
+    align-items: center;
 }
 
 .overlay {
@@ -306,4 +266,70 @@ figure.slider figure figcaption {
 .return:hover {
     text-decoration: double;
     color: rgb(176, 255, 227);
+}
+
+@media screen and (max-width: 600px) {
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+    #more {
+        display: flex;
+        flex-direction: column;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    30% {
+        left: -200%;
+    }
+
+    40% {
+        left: -300%;
+    }
+
+    50% {
+        left: -400%;
+    }
+
+    60% {
+        left: -500%;
+    }
+
+    70% {
+        left: -600%;
+    }
+
+    80% {
+        left: -700%;
+    }
+
+    90% {
+        left: -800%;
+    }
+
+    100% {
+        left: -900%;
+    }
 }
