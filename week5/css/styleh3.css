@@ -1,0 +1,138 @@
+.container {
+    background-color: rgb(241, 222, 242);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+/*Header*/
+.header {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+/*Bottom Box*/
+.bottomb {
+    display: flex;
+    flex-direction:row ;
+    margin:2%;
+}
+
+/*Menu*/
+#menu {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(107, 103, 103);
+}
+#menu a {
+    color: rgb(232, 202, 232);
+    text-decoration: none;
+    padding: 14px 25px;
+}
+
+#menu a:hover {
+    color: rgb(227, 182, 182);
+    text-decoration: underline;
+}
+#menub {
+    display: flex;
+    margin: 2%;
+    text-align: center;
+}
+#bottomtb {
+    display: flex;
+    margin: 2%;
+    text-align: center;
+}
+
+/*Content & Footer*/
+#content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+/*Bottom-Top*/
+#bottomt {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+}
+/*Content-L*/
+#left {
+    text-align: justify;
+    display: block;
+    width: 50%;
+}
+#left b {
+    font-weight:bolder;
+    font-size:larger;
+}
+/*Content-R*/
+#right {
+    display: block;
+    width: 50%;
+}
+/*Footer*/
+.footer {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+.back {    
+    background-color: #a02ef2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: larger;
+    font-weight:bolder ;
+    margin: 4px 2px;
+}
+.back:hover {
+    text-decoration: double;
+    color: rgb(176, 255, 227);
+}
+
+@media screen and (max-width: 1024px) {
+
+    #bottomt {
+        width: min-content;
+    }
+    #right {
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .footer {
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #bottomt {
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        width: 100%;
+    }
+    #right {
+        display: contents;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: 4%;
+    }
+}
