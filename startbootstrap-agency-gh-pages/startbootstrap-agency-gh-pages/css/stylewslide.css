@@ -11785,9 +11785,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 .slides {
   padding-left: 1px;
   width: 984px;
-  height: 550px;
+  height: 450px;
   display: block;
-  margin: 0 auto;
+  margin: 3% auto;
   position: relative;
   text-align: center;
 }
@@ -11865,11 +11865,11 @@ margin: 0 4px;
 position: relative;
 border-radius: 100%;
 display: inline-block;
-background-color: rgba(0, 0, 0, 0.8);
+background-color: rgba(0, 0, 0, 0.6);
 }
 .nav-dots .nav-dot:hover {
 cursor: pointer;
-background-color: rgba(0, 0, 0, 0.9);
+background-color: rgba(0, 0, 0, 0.8);
 }
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
