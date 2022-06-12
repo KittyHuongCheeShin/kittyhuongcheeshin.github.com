@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1024px;
     background-color: cornsilk;
     padding: 10px;
@@ -13,10 +13,12 @@
     text-align: center;
     padding: 20px;
 }
+
 /*Left- Logo*/
 #logo {
     padding: 5px;
 }
+
 /*Right- Hp & Menu*/
 .rightb {
     display: flex;
@@ -26,23 +28,28 @@
     align-items: flex-end;
     width: min-content;
 }
+
 /*Right- Hp*/
 #hp {
     display: flex;
     align-items: flex-end;
     margin-top: 5%;
 }
+
 #hp h2 {
-    margin : 0%;
+    margin: 0%;
 }
+
 #hp a {
     text-decoration: none;
-    color :rgb(95, 68, 11);
+    color: rgb(95, 68, 11);
 }
-#hp a:hover{
+
+#hp a:hover {
     text-decoration: underline;
     color: rgb(98, 132, 98);
 }
+
 /*Right- Menu*/
 #menu {
     display: flex;
@@ -50,81 +57,112 @@
     justify-content: right;
     background-color: rgba(0, 0, 0, 0.662);
 }
+
 #menu a {
-    color:whitesmoke;
+    color: whitesmoke;
     text-decoration: none;
     padding: 14px 25px;
 }
+
 #menu a:hover {
     color: lightgray;
     text-decoration: underline;
 }
+
 /* MenuBox-3sub boxes */
-#menub{
+#menub {
     display: flex;
 }
-#imageb{
+
+#imageb {
     display: flex;
 }
+
 #moreb {
     display: flex;
 }
 
 
 /*Image Slider*/
-#slider {
+#slideb {
+    text-align: center;
+    margin-top: 5%;
+    margin: auto;
+}
+
+#slideb h1 {
+    padding-top: 2%;
+    border-top-color: rgb(95, 72, 18);
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.slider {
     overflow: hidden;
 }
-#slider figure {
+
+.slider figure {
     position: relative;
     width: 1000%;
     margin: 0;
     left: 0;
     animation: 40s slider infinite;
 }
-#slider figure img {
+
+.slider figure img {
     width: 10%;
     float: left;
 }
+
 @keyframes slider {
     0% {
-        left:0;
+        left: 0;
     }
+
     10% {
-        left:0;
+        left: 0;
     }
+
     20% {
-        left:-100%;
+        left: -100%;
     }
+
     30% {
-        left:-200%;
+        left: -200%;
     }
+
     40% {
-        left:-300%;
+        left: -300%;
     }
+
     50% {
-        left:-400%;
+        left: -400%;
     }
+
     60% {
-        left:-500%;
+        left: -500%;
     }
+
     70% {
-        left:-600%;
+        left: -600%;
     }
+
     80% {
-        left:-700%;
+        left: -700%;
     }
+
     90% {
-        left:-800%;
+        left: -800%;
     }
+
     100% {
-        left:-900%;
+        left: -900%;
     }
 }
 
-
-
-/*Another Type/////////
+/*Another Type 
 @import url(https://fonts.googleapis.com/css?family=Istok+Web);
 @keyframes slidy {
     0% {
@@ -185,3 +223,87 @@ figure.slider figure figcaption {
   color: #fff; width: 100%;
   font-size: 2rem; padding: .6rem; 
 }*/
+
+
+/*More Box*/
+#more {
+    margin-top: 5%;
+}
+
+#more h1 {
+    padding-top: 2%;
+    border-top-color: rgb(95, 72, 18);
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.text {
+    border: 5px;
+    border-style: groove;
+    border-color: rgb(224, 171, 144);
+    width: 65%;
+    padding: 5px;
+}
+
+.side {
+    margin: auto;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    padding-left: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: max-content;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+}
+
+.side:hover .overlay {
+    opacity: 1;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    text-align: bottom;
+}
+
+.return {    
+    background-color: #fe9d00;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: larger;
+    font-weight:bolder ;
+    margin: 4px 2px;
+}
+.return:hover {
+    text-decoration: double;
+    color: rgb(176, 255, 227);
+}

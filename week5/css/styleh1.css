@@ -245,34 +245,29 @@ input#img-3:checked ~ .nav-dots label#img-dot-4 {
 
 /*Footer*/
 .footer {
-    text-align: center;
+    text-align: bottom;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     margin-top: 5% ;
 }
 
 .button {
-    display: flex;
-    background-color: rgb(51, 130, 221);
+    display: inline-block;
+    background-color: rgb(56, 135, 224);
     color :black;
     font-size: larger;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-weight:bolder ;
-    margin: auto;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
 }
 .button:hover {
     text-decoration: double;
     color: rgb(176, 255, 227);
-}
-
-.copyright {
-    display: flex;
-    text-align: bottom;
-    margin: auto;
-    width: 30%;
 }
 
 
