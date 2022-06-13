@@ -2131,12 +2131,11 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  
-  .col-md-4 {
+
+  .col-sm-6 {
     flex: 0 0 auto;
     width: 50%;
   }
-
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
