@@ -12,14 +12,14 @@
   grid-template-areas:
     'blog blog blog blog blog blog blog blog'
     'logo logo . . . phoneno phoneno phoneno'
-    'logo logo . . menu menu menu menu'
+    'logo logo . menu menu menu menu menu'
     'imageslide imageslide imageslide imageslide imageslide sidebar sidebar sidebar'
     'textcontent textcontent textcontent textcontent textcontent sidebar sidebar sidebar'
     'footer footer footer footer footer footer footer footer';
   gap: 10px;
   background-color: #2196F3;
   padding: 10px;
-  grid-template-rows: 80px 80px 80px 200px 400px 300px;
+  grid-template-rows: 55px 50px 50px 200px 350px 250px;
 }
 
 .grid-container > div {

@@ -9,8 +9,8 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: azure;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
     position: sticky;
     top:0%;
 
@@ -18,45 +18,72 @@
 
 #logo {
     padding : 5px;
-    background-color: azure;
+    background-color: rgb(232, 232, 232);
+    height: 40px;
 }
 #rightbox {
     display: flex;
-    background-color: azure;
+    background-color: rgb(232, 232, 232);
     padding :5px;
     justify-content: flex-end;
     height:40px;
     text-align: center;
 }
 #rightbox p {
-    padding: 15px;
+    padding-left: 15px;
+}
+#rightbox img {
+    padding-left: 15px;
+}
+#homeb{
+    display: flex;
+}
+#discob{
+    display: flex;
+}
+#photob {
+    display: flex;
+}
+#contactb{
+    display: flex;
+}
+#selfb {
+    display: flex;
+    text-align: center;
 }
 
 .content {
     position: relative;
-    background-image: url("../images/week6img.jpg");
-    height: 800px;
+    background-image: url("../images/background1.jpg");
+    height: 630px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bottoml {
     position: absolute;
-    bottom: 15px;
-    left: 10px;
+    display: flex;
+    bottom: 50px;
+    left: 20px;
     color: white;
+    width: 25%;
+    height: 40px;
+}
+.bottoml p{
+    padding-left: 15px;
 }
 
 .bottomr {
     position: absolute;
-    bottom: 15px;
+    bottom: 40px;
     right: 10px;
     border:3px;
     border-style: dashed;
     border-color: antiquewhite;
     color: white;
     border-radius: 5px;
-    padding-left: 5px;
+    padding-left: 8px;
+    width: 25%;
 }
 .centerr {
     text-align: center;
@@ -78,5 +105,14 @@
     color: white;
     align-items: center;
     left: 38%;
+}
+#center0 {
+    height: 40px;
+    display:flex;
+}
+#center1 {
+    padding-left: 10px;
+    height: 40px;
+    display:flex;
 }
 
