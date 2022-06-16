@@ -1,0 +1,35 @@
+.logo { grid-area: logo; }
+.phoneno { grid-area: phoneno; }
+.menu { grid-area: menu; }
+.imageslide { grid-area: imageslide; }
+.feat1 { grid-area: feat1; }
+.feat2 { grid-area: feat2; }
+.feat3 { grid-area: feat3; }
+.feat4 { grid-area: feat4; }
+.sidebar { grid-area: sidebar; }
+.textcontent { grid-area: textcontent; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo logo . . . . . '
+    'logo logo logo . . phoneno phoneno phoneno'
+    'logo logo logo . . . . . '
+    'menu menu menu menu menu menu menu menu'
+    'imageslide imageslide imageslide imageslide imageslide imageslide imageslide imageslide'
+    'feat1 feat1 feat2 feat2 feat3 feat3 feat4 feat4'
+    'textcontent textcontent textcontent textcontent textcontent sidebar sidebar sidebar'
+    'footer footer footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-rows: 40px 80px 40px 80px 300px 200px 350px 60px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

@@ -1,0 +1,31 @@
+.blog { grid-area: blog; }
+.logo { grid-area: logo; }
+.phoneno { grid-area: phoneno; }
+.menu { grid-area: menu; }
+.imageslide { grid-area: imageslide; }
+.sidebar { grid-area: sidebar; }
+.textcontent { grid-area: textcontent; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'blog blog blog blog blog blog blog blog'
+    'logo logo . . . phoneno phoneno phoneno'
+    'logo logo . . menu menu menu menu'
+    'imageslide imageslide imageslide imageslide imageslide sidebar sidebar sidebar'
+    'textcontent textcontent textcontent textcontent textcontent sidebar sidebar sidebar'
+    'footer footer footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-rows: 80px 80px 80px 200px 400px 300px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
