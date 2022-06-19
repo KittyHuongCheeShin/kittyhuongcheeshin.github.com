@@ -14,6 +14,7 @@
     margin: auto;
     background-size: 55%;
 }
+
 /*Header*/
 .header {
     display: flex;
@@ -21,6 +22,7 @@
     justify-content: space-evenly;
     width: 100%;
 }
+
 /*H-Logo*/
 #logo {
     display: flex;
@@ -30,38 +32,46 @@
     text-align: center;
     margin-left: 15%;
 }
+
 #logo h1 {
     padding-left: 10px;
 }
+
 /*H-Menu*/
 #menu {
-    display:flex;
+    display: flex;
     text-align: right;
     width: 50%;
     margin: auto;
     justify-content: center;
 }
+
 #menu a {
     text-decoration: none;
     color: white;
 }
+
 /*MenuBox*/
 #homeb {
     display: flex;
     padding-left: 20px;
 }
+
 #serviceb {
-    display:flex;
+    display: flex;
     padding-left: 20px;
 }
+
 #priceb {
     display: flex;
     padding-left: 20px;
 }
+
 #contactb {
-    display:flex;
+    display: flex;
     padding-left: 20px;
 }
+
 /*Page1-Content*/
 .hcontent {
     display: flex;
@@ -70,6 +80,7 @@
     width: 100%;
     height: 600px;
 }
+
 /*C-Side*/
 #hside {
     display: flex;
@@ -81,11 +92,13 @@
     margin-bottom: 10%;
 
 }
-#hside img{
+
+#hside img {
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
+
 /*C-Text*/
 #htext {
     margin-top: 9%;
@@ -96,37 +109,42 @@
     margin-left: 5%;
     position: relative;
 }
-#htext h2{
-    font-size:45px;
-    font-weight:500;
+
+#htext h2 {
+    font-size: 45px;
+    font-weight: 500;
     margin: 0;
     margin-left: 2%;
 }
-#htext h1{
+
+#htext h1 {
     font-size: 55px;
     font-weight: 900;
     margin: 2%;
 }
-#htext p{
+
+#htext p {
     margin: 1%;
     margin-left: 2%;
     --bs-text-opacity: 1;
     color: #6c757d !important;
     font-weight: 100;
 }
-#htext img{
+
+#htext img {
     position: absolute;
     border: 2px;
     bottom: 0;
     left: 115%;
     border-color: whitesmoke;
-    padding:15px;
+    padding: 15px;
     border-radius: 50px;
     border-style: solid;
-    height:10%;
+    height: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
 }
+
 #htext button {
     background-image: url(../images/homework/Rectangle\ 8@2x.png);
     background-repeat: no-repeat;
@@ -142,6 +160,7 @@
     cursor: pointer;
     border-radius: 50px;
 }
+
 /*C-Image*/
 #himage {
     display: flex;
@@ -163,6 +182,7 @@
     text-align: center;
     height: 650px;
 }
+
 /*Left-Image*/
 #aimg {
     display: flex;
@@ -175,35 +195,40 @@
     margin-right: 0;
     margin-left: 5%;
 }
+
 /*Right-Text*/
 #atext {
     display: flex;
     flex-direction: column;
     text-align: justify;
     padding: 20px;
-    width:30%;
-    margin:10%;
+    width: 30%;
+    margin: 10%;
     margin-left: 0;
 }
+
 #atext h3 {
     color: rgb(105, 105, 216);
     margin-left: 2%;
     font-size: large;
     margin: 0;
-    font-weight:100;
+    font-weight: 100;
 }
-#atext h1{
+
+#atext h1 {
     font-size: 45px;
     font-weight: 900;
     margin: 2%;
 }
+
 #atext p {
-    margin:0;
+    margin: 0;
     margin-left: 2%;
     --bs-text-opacity: 1;
     color: #6c757d !important;
     font-weight: 100;
 }
+
 #atext button {
     background-image: url(../images/homework/Rectangle\ 8@2x.png);
     background-repeat: no-repeat;
@@ -225,35 +250,42 @@
 /*Page3-Service*/
 #service {
     display: flex;
-    margin:auto;
+    margin: auto;
     flex-direction: column;
-    height: 750px;
+    height: 1300px;
 }
+
+/*Title*/
 .stitle {
     margin-left: 11%;
     display: flex;
     flex-direction: column;
 }
+
 .stitle h2 {
     color: rgb(105, 105, 216);
     margin-left: 2%;
-    font-size:larger;
+    font-size: larger;
     margin: 0;
-    font-weight:100;
+    font-weight: 100;
 }
-.stitle h1{
+
+.stitle h1 {
     font-size: 45px;
     font-weight: 900;
-    margin:0;
+    margin: 0;
 }
+
+/*Box Contant*/
 .scontent {
     margin-left: 6%;
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 750px;
     width: 90%;
-    
+    margin-bottom: 15%;
 }
+
 .box {
     display: flex;
     margin: auto;
@@ -262,10 +294,11 @@
     height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
-    margin-top: 5%;
+    margin-top: 8%;
     position: relative;
     border-radius: 35px;
 }
+
 .box img {
     display: flex;
     width: 28%;
@@ -273,15 +306,18 @@
     margin-left: 35%;
     margin-top: 3%;
 }
+
 .box h4 {
     padding-left: 20px;
     margin-bottom: 5%;
 }
+
 .box p {
     padding-left: 20px;
     padding-top: 0%;
     padding-right: 1.5px;
 }
+
 .box button {
     background-image: url(../images/homework/Rectangle\ 8@2x.png);
     background-repeat: no-repeat;
@@ -299,4 +335,124 @@
     border-radius: 50px;
     bottom: 3%;
     right: 9%;
+}
+
+
+
+/*Page4-Pricing*/
+#price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    height: 710px;
+    background-color: #ECEAFF;
+}
+
+#ptitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+#ptitle h2 {
+    color: rgb(105, 105, 216);
+    font-size: larger;
+    margin: 0;
+    font-weight: 100;
+}
+
+#ptitle h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#pcontent {
+    width: 100%;
+    height: 650px;
+    margin-top: 5%;
+    transform: translateX(-1%)
+}
+
+#pslider {
+    display: flex;
+}
+
+.pbox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: auto;
+    border-radius: 35px;
+    background-color: white;
+    height: 400px;
+    position: relative;
+}
+
+.pbox h2 {
+    margin-top: 15%;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.pbox h3 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pbox p {
+    padding-right: 50px;
+    padding-left: 50px;
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+
+.pbox button {
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    border: 2px;
+    border-color: rgb(105, 105, 216);
+    border-style: solid;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    bottom: 10%;
+    right: 25%;
+}
+
+.pbox button:hover {
+    background-image: url(../images/homework/Rectangle\ 8@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: none;
+}
+.pdots {
+    margin-top: 5%;
+    display: inline-block
+}
+.controller {
+    height: 8px;
+    width: 8px;
+    border: 1px;
+    background-color: #ECEAFF;
+    border-color: rgb(107, 107, 213);
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+.controllers {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(94, 108, 189);
+    border-radius: 50%;
+    display: inline-block;
 }
