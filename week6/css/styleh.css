@@ -1,0 +1,135 @@
+.container {
+    margin: 0;
+}
+
+/*Page1*/
+#mainpage {
+    background-image: url("../images/homework/Bg\ Shape@2x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background-size: 55%;
+}
+/*Header*/
+.header {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/*H-Logo*/
+#logo {
+    display: flex;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-left: 15%;
+}
+#logo h1 {
+    padding-left: 10px;
+}
+/*H-Menu*/
+#menu {
+    display:flex;
+    text-align: right;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+/*MenuBox*/
+#homeb {
+    display: flex;
+    padding-left: 20px;
+}
+#serviceb {
+    display:flex;
+    padding-left: 20px;
+}
+#priceb {
+    display: flex;
+    padding-left: 20px;
+}
+#contactb {
+    display:flex;
+    padding-left: 20px;
+}
+/*Page1-Content*/
+.hcontent {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+#hside {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10%;
+
+}
+#hside img{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#htext {
+    margin-top: 9%;
+    text-align: justify;
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#htext h2{
+    font-size:45px;
+    font-weight:500;
+    margin: 0;
+    margin-left: 2%;
+}
+#htext h1{
+    font-size: 55px;
+    font-weight: 900;
+    margin: 2%;
+}
+#htext p{
+    margin: 1%;
+    margin-left: 2%;
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+    font-weight: 100;
+}
+.button {
+    background-image: url(../images/homework/Rectangle\ 8@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+#himage {
+    display: flex;
+    width: 100%;
+    background-image: url("../images/homework/Group\ 1423@2x.png");
+    background-repeat: no-repeat;
+    background-size: 79% 90%;
+    background-position: right;
+    margin-right: 10%;
+}

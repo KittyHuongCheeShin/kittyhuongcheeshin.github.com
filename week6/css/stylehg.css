@@ -1,0 +1,30 @@
+.logo { grid-area: logo; }
+.menu { grid-area: menu; }
+.side { grid-area: side; }
+.htext { grid-area: htext; }
+.image { grid-area: image; }
+.image { grid-area: hbutton; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo . . . menu menu menu menu'
+    '. . . . . image image image image'
+    '. . htext htext htext image image image image'
+    '. . htext htext htext image image image image'
+    'side . htext htext htext image image image image'
+    '. . . . hbutton . . . .';
+
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  grid-template-rows: 60px 60px 80px 100px 150px 80px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
