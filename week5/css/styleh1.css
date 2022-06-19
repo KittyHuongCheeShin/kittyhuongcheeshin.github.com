@@ -177,20 +177,46 @@ input#img-3:checked ~ .nav-dots label#img-dot-4 {
     display: flex;
     margin: 10px;
     margin-top: 2.5%;
-    text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    height: 180px;
 }
-.featbox {
-    display: block;
+.featbox1 {
+    display: inline-block;
     margin: auto;
+    background-image: url("../images/homework/h1feat1.jpg");
+    width: 23%;
+    background-size: cover;
+    height: 150px;
+}
+.featbox2 {
+    display: inline-block;
+    margin: auto;
+    background-image: url("../images/homework/h1feat2.jpg");
+    width: 23%;
+    background-size: cover;
+    height: 150px;
+}
+.featbox3 {
+    display: inline-block;
+    margin: auto;
+    background-image: url("../images/homework/h1feat3.jpg");
+    width: 23%;
+    background-size: cover;
+    height: 150px;
+}
+.featbox4 {
+    display: inline-block;
+    margin: auto;
+    background-image: url("../images/homework/h1feat4.jpg");
+    width: 23%;
+    background-size: cover;
+    height: 150px;
 }
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
     width: max-content;
     transition: .5s ease;
     opacity:0;
