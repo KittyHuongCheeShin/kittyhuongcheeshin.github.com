@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
 .container {
     margin: 0;
 }
@@ -111,16 +116,16 @@
 }
 
 #htext h2 {
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 500;
     margin: 0;
     margin-left: 2%;
 }
 
 #htext h1 {
-    font-size: 55px;
-    font-weight: 900;
-    margin: 2%;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 1%;
 }
 
 #htext p {
@@ -202,31 +207,34 @@
     flex-direction: column;
     text-align: justify;
     padding: 20px;
-    width: 30%;
+    padding-right: 0;
+    width: 32%;
     margin: 10%;
     margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 8%;
 }
 
 #atext h3 {
     color: rgb(105, 105, 216);
-    margin-left: 2%;
     font-size: large;
     margin: 0;
+    margin-left: 2%;
     font-weight: 100;
 }
 
 #atext h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 600;
     margin: 2%;
 }
 
 #atext p {
-    margin: 0;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     margin-left: 2%;
     --bs-text-opacity: 1;
     color: #6c757d !important;
-    font-weight: 100;
 }
 
 #atext button {
@@ -255,7 +263,7 @@
     height: 1300px;
 }
 
-/*Title*/
+/*S-Title*/
 .stitle {
     margin-left: 11%;
     display: flex;
@@ -264,19 +272,19 @@
 
 .stitle h2 {
     color: rgb(105, 105, 216);
-    margin-left: 2%;
     font-size: larger;
     margin: 0;
+    margin-bottom: 1%;
     font-weight: 100;
 }
 
 .stitle h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0;
 }
 
-/*Box Contant*/
+/*S-Box Contant*/
 .scontent {
     margin-left: 6%;
     display: flex;
@@ -290,8 +298,8 @@
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 24%;
-    height: 350px;
+    width: 26%;
+    height: 370px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
     margin-top: 8%;
@@ -345,10 +353,11 @@
     flex-direction: column;
     text-align: center;
     margin: auto;
-    height: 710px;
+    height: 763px;
     background-color: #ECEAFF;
 }
 
+/*P-Title*/
 #ptitle {
     display: flex;
     flex-direction: column;
@@ -359,15 +368,17 @@
     color: rgb(105, 105, 216);
     font-size: larger;
     margin: 0;
+    margin-bottom: 1%;
     font-weight: 100;
 }
 
 #ptitle h1 {
     font-size: 45px;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0;
 }
 
+/*P-Content*/
 #pcontent {
     width: 100%;
     height: 650px;
@@ -387,7 +398,7 @@
     margin: auto;
     border-radius: 35px;
     background-color: white;
-    height: 400px;
+    height: 420px;
     position: relative;
 }
 
@@ -435,13 +446,15 @@
     color: white;
     border: none;
 }
+
 .pdots {
     margin-top: 5%;
     display: inline-block
 }
+
 .controller {
-    height: 8px;
-    width: 8px;
+    height: 4px;
+    width: 4px;
     border: 1px;
     background-color: #ECEAFF;
     border-color: rgb(107, 107, 213);
@@ -449,10 +462,170 @@
     border-radius: 50%;
     display: inline-block;
 }
+
 .controllers {
     height: 15px;
     width: 15px;
     background-color: rgb(94, 108, 189);
     border-radius: 50%;
     display: inline-block;
+}
+
+
+
+/*Page5-Contact&Footer*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+}
+
+/*C-Subscribe*/
+.cemail {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.cemail h2 {
+    color: rgb(105, 105, 216);
+    font-size: larger;
+    margin: 0;
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+
+.cemail h1 {
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 10px 0;
+    padding: 13px 9px;
+    width: 50%;
+    background-color: #F6F7FB;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-top: 5%;
+}
+
+.form-inline button {
+    background-image: url(../images/homework/Rectangle\ 8@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+/*C-Footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    background-image: url(../images/homework/Bg\ Shape\ footer\ 1-1@2x.png), url("../images/homework/Bg\ Shape\ footer\ 3@2x.png"), url("../images/homework/Bg\ Shape\ footer\ 2-1@2x.png");
+    background-position: left bottom, right bottom, left bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 108%, 29%, 100%;
+}
+
+.fbox {
+    margin-top: 21%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    color: white;
+    bottom: 10%;
+    height: 180px;
+}
+
+.fbox h1 {
+    font-weight: 400;
+    margin: 2%;
+    margin-left: 15%;
+}
+
+.fbox h2 {
+    font-weight: 400;
+    margin: 2%;
+}
+
+.fbox h3 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 3%;
+}
+
+.fbox p {
+    margin: 3%;
+}
+.fimg img {
+    width: 4.5%;
+    padding: 10px;
+    height:33%;
+}
+.fbox .fimg {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .hcontent {
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .scontent {
+        display: flex;
+        flex-direction: row;
+    }
+    #pslider {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-inline {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
