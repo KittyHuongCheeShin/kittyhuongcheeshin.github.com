@@ -398,7 +398,7 @@ body {
     margin: auto;
     border-radius: 35px;
     background-color: white;
-    height: 420px;
+    height: max-content;
     position: relative;
 }
 
