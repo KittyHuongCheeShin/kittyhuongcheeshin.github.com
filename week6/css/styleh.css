@@ -5,6 +5,7 @@ body {
 
 .container {
     margin: 0;
+    max-width: 1220px;
 }
 
 
@@ -95,6 +96,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 10%;
+    position: absolute;
 
 }
 
@@ -602,3 +604,19 @@ body {
 }
 
 
+@media screen and (max-width: 600px) {
+
+    #mainpage {
+        background-image: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: black;
+    }
+}
