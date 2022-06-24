@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+}
+
+/*Text & Button basic setting*/
+h1 {
+    font-size: 265%;
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: rgb(105, 105, 216);
+    font-size: large;
+    font-weight: 100;
+}
+
+p {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+
+button {
+    width: 35%;
+    background-image: url(../images/homework/Rectangle\ 8@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 15px 10px;
+    margin: 20px 2px;
+    font-size: 90%;
+}
+
+/*SideBar*/
+#sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    top: 45%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.734);
+    border-radius: 25px;
+    width: 40px;
+}
+#sidebar img {
+    padding: 10px;
+}
+
+/*MainPage*/
+#mainpage {
+    background-image: url(../images/homework/Bg\ Shape@2x.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+}
+
+/*Header-Logo*/
+#logo {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 1%;
+    align-items: flex-end;
+}
+#logo img {
+    width: 10%;
+}
+#logo h1 {
+    font-size: 200%;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 1.5%;
+}
+
+/*Header-Menu*/
+.menu {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu .icon {
+    display: none;
+}
+
+/*Header-Menu-DisplayOut*/
+.overlay {
+    height: 100%; /*show for whole screen*/
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; /*when open use 0.5 second*/
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*MenuBox*/
+i {
+    display: flex;
+    color: #211AA8;
+    padding-left: 20px;
+}
+#homeb {
+    display: flex;
+    padding-left: 20px;
+}
+#serviceb {
+    display: flex;
+    padding-left: 20px;
+}
+#priceb {
+    display: flex;
+    padding-left: 20px;
+}
+#contactb {
+    display: flex;
+    padding-left: 20px;
+}
+
+/*MainPage-Content*/
+#mcontent {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+#mtext {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-left: 14%;
+    align-items: baseline;
+}
+#mtext h2 {
+    font-size: 250%;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 2%;
+    color: black;
+}
+#mtext h1 {
+    font-size: 350%;
+    font-weight: 800;
+    margin: 1%;
+    padding: 1%;
+}
+#mtext p {
+    margin: 1%;
+    margin-left: 2%;
+    font-weight: 100;
+}
+#mtext button {
+    margin-left: 2%;
+}
+
+/*MainPage-Content-Image*/
+#mimg {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+#mmouse img {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 2%;
+    border-color: whitesmoke;
+    padding: 15px;
+    border-radius: 50px;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*AboutPage*/
+#about {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+/*About-Image*/
+#aimg {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-left: 8%;
+}
+/*About-Text*/
+#atext {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(../images/homework/who\ we\ are\ background@2x.png);
+    background-size: cover;
+    padding: 5%;
+    padding-top: 10%;
+
+}
+#atext h3 {
+    margin: 0;
+}
+#atext h1 {
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+#atext p {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-right: 23%;
+}
+
+
+/*ServicePage*/
+#service {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+/*Service-Title*/
+#stitle {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 14%;
+}
+#stitle h2 {
+    margin: 0;
+    margin-bottom: 1%;
+}
+#stitle h1 {
+    margin: 0;
+}
+/*Service-ContentBox*/
+#scontent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15%;
+    justify-content: space-around;
+    background-image: url(../images/homework/background@2x.png);
+    background-size: cover;
+    margin-top: 2%;
+}
+.sbox {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 23%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 35px;
+    align-items: center;
+    background-color: white;
+    margin-left: 8.5%;
+}
+.sbox img {
+    width: 25%;
+}
+.sbox p {
+    padding: 7.1px;
+}
+
+
+
+/*PricingPage*/
+#price {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ECEAFF;
+    align-items: center;
+}
+/*Price-Title*/
+#ptitle {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+#ptitle h2 {
+    margin: 2%;
+    margin-bottom: 1%;
+}
+#ptitle h1 {
+    margin: 0;
+    margin-bottom: 5%;
+}
+/*Price-ContentBox*/
+#pcontent {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.pbox {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 8%;
+    border-radius: 35px;
+    background-color: white;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.pbox h2 {
+    font-size: 160%;
+    color: black;
+}
+.pbox h3 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 900;
+}
+.pbox p {
+    padding: 25px;
+}
+.pbox button {
+    background-color: white;
+    border: 2px;
+    border-color: rgb(105, 105, 216);
+    border-style: solid;
+    background-image: none;
+    color: black;
+}
+.pbox button:hover {
+    background-image: url(../images/homework/Rectangle\ 8@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: none;
+}
+/*Price-Dots*/
+#pdots {
+    display: inline-block;
+    border-radius: 35px;
+    padding-bottom: 2%;
+}
+.controller {
+    height: 4px;
+    width: 4px;
+    border: 1px;
+    background-color: #ECEAFF;
+    border-color: rgb(107, 107, 213);
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+.controllers {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(94, 108, 189);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+/*Contact*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#contact h2 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight:600;
+}
+
+#contact h1 {
+    font-weight: 300;
+    margin: 0;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2%;
+}
+.form-inline input {
+    vertical-align: middle;
+    margin: 10px 0;
+    display: flex;
+    padding: 15px 20px;
+    width: 35%;
+    background-color: #F6F7FB;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.form-inline button {
+    width: 10%;
+}
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+
+
+
+
+/*Tablet screen size*/
+@media screen and (max-width:1200px) {
+
+    /*MainPage-Text*/
+    #mtext {margin-top: 5%;}
+    #mtext h1 {font-size: 300%;}
+
+    /*Service-Box*/
+    #stitle {margin-top: 8%;}
+    .sbox {
+        margin-left: 10%;
+        width: 35%;
+    }
+
+    /*Contact-Text*/
+    #contact h1 {font-size: 230%;}
+    .form-inline button {width: 25%;}
+}
+
+/*Mobile screen size*/
+@media screen and (max-width:600px) {
+
+    /*SideBar*/
+    #sidebar {width: 30px;}
+
+
+    /*MainPage*/
+    #mainpage {background-image: none;}
+
+    /*Header-Logo*/
+    #logo img {width: 20%;}
+    #logo h1 {
+        font-size: 150%;
+        margin-bottom: 3%;
+    }
+
+    /*Header-Menu*/
+    .menu {flex-direction: column;}
+    .menu a.icon {
+        position: absolute;
+        right: 10%;
+        display: block;
+    }
+    .menu.responsive a {
+        color: #4D45BC;
+        text-align: justify;
+        display: none;
+        display: block;
+    }
+
+    /*Header-Menu-DisplayOut*/
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    /*MainPage-Content*/
+    #mcontent {
+        display: flex;
+        flex-direction: column;
+    }
+    #mtext {width: 100%;}
+    #mtext h1 {font-size: 350%;}
+    #mimg {
+        width: 100%;
+        margin-top: 8%;
+        margin-left: 12%;
+    }
+    #mmouse img {
+        margin-top: 2%;
+        width: 4%;
+    }
+
+    /*AboutPage*/
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    #aimg {
+        margin-top: 5%;
+        width: 100%;
+    }
+    #atext {
+        margin-left: 12%;
+        width: 100%;
+    }
+
+    /*Service-Box*/
+    #stitle {margin-top: 10%;}
+    .sbox {
+        margin-left: 12%;
+        width: 70%;
+    }
+
+    /*Price-Box*/
+    #ptitle {margin-top: 10%;}
+    #pcontent {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .pbox {
+        width: 65%;
+        margin-left: 13%;
+    }
+
+    /*Contact-Text*/
+    #contact h1 {font-size: 150%;}
+    .form-inline button {width: 35%;}
+
+}
