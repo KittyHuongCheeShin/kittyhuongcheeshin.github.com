@@ -13,7 +13,8 @@ h1 {
     font-weight: 600;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: rgb(105, 105, 216);
     font-size: large;
     font-weight: 100;
@@ -21,7 +22,7 @@ h2, h3 {
 
 p {
     --bs-text-opacity: 1;
-    color: #6c757d !important;
+    color: #6c757d;
 }
 
 button {
@@ -54,6 +55,7 @@ button {
     border-radius: 25px;
     width: 40px;
 }
+
 #sidebar img {
     padding: 10px;
 }
@@ -68,6 +70,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 #header {
     display: flex;
     justify-content: space-evenly;
@@ -84,9 +87,11 @@ button {
     margin-top: 1%;
     align-items: flex-end;
 }
+
 #logo img {
     width: 10%;
 }
+
 #logo h1 {
     font-size: 200%;
     font-weight: bold;
@@ -101,17 +106,20 @@ button {
     margin: auto;
     justify-content: center;
 }
+
 .menu a {
     text-decoration: none;
     color: white;
 }
+
 .menu .icon {
     display: none;
 }
 
 /*Header-Menu-DisplayOut*/
 .overlay {
-    height: 100%; /*show for whole screen*/
+    height: 100%;
+    /*show for whole screen*/
     width: 0;
     position: fixed;
     z-index: 1;
@@ -120,8 +128,10 @@ button {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
-    transition: 0.5s; /*when open use 0.5 second*/
+    transition: 0.5s;
+    /*when open use 0.5 second*/
 }
+
 .overlay-content {
     position: relative;
     top: 25%;
@@ -129,6 +139,7 @@ button {
     text-align: center;
     margin-top: 30px;
 }
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -137,10 +148,12 @@ button {
     display: block;
     transition: 0.3s;
 }
+
 .overlay a:hover,
 .overlay a:focus {
     color: #f1f1f1;
 }
+
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -154,18 +167,22 @@ i {
     color: #211AA8;
     padding-left: 20px;
 }
+
 #homeb {
     display: flex;
     padding-left: 20px;
 }
+
 #serviceb {
     display: flex;
     padding-left: 20px;
 }
+
 #priceb {
     display: flex;
     padding-left: 20px;
 }
+
 #contactb {
     display: flex;
     padding-left: 20px;
@@ -177,6 +194,7 @@ i {
     width: 100%;
     margin: auto;
 }
+
 #mtext {
     display: flex;
     flex-direction: column;
@@ -185,6 +203,7 @@ i {
     margin-left: 14%;
     align-items: baseline;
 }
+
 #mtext h2 {
     font-size: 250%;
     font-weight: 500;
@@ -192,17 +211,20 @@ i {
     margin-left: 2%;
     color: black;
 }
+
 #mtext h1 {
     font-size: 350%;
     font-weight: 800;
     margin: 1%;
     padding: 1%;
 }
+
 #mtext p {
     margin: 1%;
     margin-left: 2%;
     font-weight: 100;
 }
+
 #mtext button {
     margin-left: 2%;
 }
@@ -213,6 +235,7 @@ i {
     width: 50%;
     margin: auto;
 }
+
 #mmouse img {
     display: flex;
     align-items: center;
@@ -232,6 +255,7 @@ i {
     width: 100%;
     margin: auto;
 }
+
 /*About-Image*/
 #aimg {
     display: flex;
@@ -239,6 +263,7 @@ i {
     margin: auto;
     margin-left: 8%;
 }
+
 /*About-Text*/
 #atext {
     display: flex;
@@ -250,13 +275,16 @@ i {
     padding-top: 10%;
 
 }
+
 #atext h3 {
     margin: 0;
 }
+
 #atext h1 {
     margin-bottom: 4%;
     margin-top: 2%;
 }
+
 #atext p {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
@@ -271,6 +299,7 @@ i {
     margin: auto;
     width: 100%;
 }
+
 /*Service-Title*/
 #stitle {
     display: flex;
@@ -280,13 +309,16 @@ i {
     width: 100%;
     margin-left: 14%;
 }
+
 #stitle h2 {
     margin: 0;
     margin-bottom: 1%;
 }
+
 #stitle h1 {
     margin: 0;
 }
+
 /*Service-ContentBox*/
 #scontent {
     display: flex;
@@ -298,6 +330,7 @@ i {
     background-size: cover;
     margin-top: 2%;
 }
+
 .sbox {
     display: flex;
     margin: auto;
@@ -311,9 +344,11 @@ i {
     background-color: white;
     margin-left: 8.5%;
 }
+
 .sbox img {
     width: 25%;
 }
+
 .sbox p {
     padding: 7.1px;
 }
@@ -328,6 +363,7 @@ i {
     background-color: #ECEAFF;
     align-items: center;
 }
+
 /*Price-Title*/
 #ptitle {
     display: flex;
@@ -336,20 +372,24 @@ i {
     width: 100%;
     align-items: center;
 }
+
 #ptitle h2 {
     margin: 2%;
     margin-bottom: 1%;
 }
+
 #ptitle h1 {
     margin: 0;
     margin-bottom: 5%;
 }
+
 /*Price-ContentBox*/
 #pcontent {
     display: flex;
     margin: auto;
     width: 100%;
 }
+
 .pbox {
     display: flex;
     flex-direction: column;
@@ -362,18 +402,22 @@ i {
     text-align: center;
     margin-bottom: 5%;
 }
+
 .pbox h2 {
     font-size: 160%;
     color: black;
 }
+
 .pbox h3 {
     color: blue;
     font-size: 25px;
     font-weight: 900;
 }
+
 .pbox p {
     padding: 25px;
 }
+
 .pbox button {
     background-color: white;
     border: 2px;
@@ -382,6 +426,7 @@ i {
     background-image: none;
     color: black;
 }
+
 .pbox button:hover {
     background-image: url(../images/homework/Rectangle\ 8@2x.png);
     background-repeat: no-repeat;
@@ -389,12 +434,14 @@ i {
     color: white;
     border: none;
 }
+
 /*Price-Dots*/
 #pdots {
     display: inline-block;
     border-radius: 35px;
     padding-bottom: 2%;
 }
+
 .controller {
     height: 4px;
     width: 4px;
@@ -405,6 +452,7 @@ i {
     border-radius: 50%;
     display: inline-block;
 }
+
 .controllers {
     height: 15px;
     width: 15px;
@@ -422,16 +470,18 @@ i {
     align-items: center;
     width: 100%;
 }
+
 #contact h2 {
     margin-top: 5%;
     margin-bottom: 1%;
-    font-weight:600;
+    font-weight: 600;
 }
 
 #contact h1 {
     font-weight: 300;
     margin: 0;
 }
+
 .form-inline {
     display: flex;
     align-items: center;
@@ -440,6 +490,7 @@ i {
     justify-content: center;
     margin-top: 2%;
 }
+
 .form-inline input {
     vertical-align: middle;
     margin: 10px 0;
@@ -450,11 +501,72 @@ i {
     border: 1px solid #fff;
     border-radius: 5px;
 }
+
 .form-inline button {
     width: 10%;
 }
+
 .form-inline button:hover {
     background-color: royalblue;
+}
+
+
+
+/*Footer*/
+#footer {
+    display: flex;
+    background-image: url(../images/homework/Bg\ Shape\ footer\ full.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    margin: 3%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.fimg {
+    display: flex;
+    width: 80%;
+}
+
+.fimg img {
+    padding: 10px;
+}
+
+.fbox h1 {
+    font-weight: 400;
+    margin: 2%;
+    margin-left: 20%;
+    color: white;
+}
+
+.fbox h2 {
+    font-weight: 400;
+    font-size: 180%;
+    margin: 2%;
+    color: white;
+}
+
+.fbox h3 {
+    font-weight: 300;
+    font-size: 130%;
+    margin: 3%;
+    color: white;
+}
+
+.fbox p {
+    margin: 3%;
+    color: white;
 }
 
 
@@ -462,48 +574,100 @@ i {
 
 
 /*Tablet screen size*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
 
     /*MainPage-Text*/
-    #mtext {margin-top: 5%;}
-    #mtext h1 {font-size: 300%;}
+    #mtext {
+        margin-top: 5%;
+    }
+
+    #mtext h1 {
+        font-size: 300%;
+    }
 
     /*Service-Box*/
-    #stitle {margin-top: 8%;}
+    #stitle {
+        margin-top: 8%;
+    }
+
     .sbox {
         margin-left: 10%;
         width: 35%;
     }
 
     /*Contact-Text*/
-    #contact h1 {font-size: 230%;}
-    .form-inline button {width: 25%;}
+    #contact h1 {
+        font-size: 230%;
+    }
+
+    .form-inline button {
+        width: 25%;
+    }
+
+    /*Footer*/
+    .fbox {
+        width: 16%;
+    }
+
+    .fbox h1 {
+        font-size: 180%;
+    }
+
+    .fbox h2 {
+        font-size: 120%;
+    }
+
+    .fbox h3 {
+        font-size: 100%;
+    }
+
+    .fbox p {
+        font-size: 80%;
+    }
+
+    .fimg img {
+        width: 9%;
+        padding: 5px;
+        height: 3%;
+    }
+
 }
 
 /*Mobile screen size*/
 @media screen and (max-width:600px) {
 
     /*SideBar*/
-    #sidebar {width: 30px;}
+    #sidebar {
+        width: 30px;
+    }
 
 
     /*MainPage*/
-    #mainpage {background-image: none;}
+    #mainpage {
+        background-image: none;
+    }
 
     /*Header-Logo*/
-    #logo img {width: 20%;}
+    #logo img {
+        width: 20%;
+    }
+
     #logo h1 {
         font-size: 150%;
         margin-bottom: 3%;
     }
 
     /*Header-Menu*/
-    .menu {flex-direction: column;}
+    .menu {
+        flex-direction: column;
+    }
+
     .menu a.icon {
         position: absolute;
         right: 10%;
         display: block;
     }
+
     .menu.responsive a {
         color: #4D45BC;
         text-align: justify;
@@ -512,7 +676,10 @@ i {
     }
 
     /*Header-Menu-DisplayOut*/
-    .overlay a {font-size: 20px}
+    .overlay a {
+        font-size: 20px
+    }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -524,13 +691,21 @@ i {
         display: flex;
         flex-direction: column;
     }
-    #mtext {width: 100%;}
-    #mtext h1 {font-size: 350%;}
+
+    #mtext {
+        width: 100%;
+    }
+
+    #mtext h1 {
+        font-size: 350%;
+    }
+
     #mimg {
         width: 100%;
         margin-top: 8%;
         margin-left: 12%;
     }
+
     #mmouse img {
         margin-top: 2%;
         width: 4%;
@@ -541,36 +716,61 @@ i {
         display: flex;
         flex-direction: column;
     }
+
     #aimg {
         margin-top: 5%;
         width: 100%;
     }
+
     #atext {
         margin-left: 12%;
         width: 100%;
     }
 
     /*Service-Box*/
-    #stitle {margin-top: 10%;}
+    #stitle {
+        margin-top: 10%;
+    }
+
     .sbox {
         margin-left: 12%;
         width: 70%;
     }
 
     /*Price-Box*/
-    #ptitle {margin-top: 10%;}
+    #ptitle {
+        margin-top: 10%;
+    }
+
     #pcontent {
         display: flex;
         flex-direction: column;
         margin-top: 5%;
     }
+
     .pbox {
         width: 65%;
         margin-left: 13%;
     }
 
     /*Contact-Text*/
-    #contact h1 {font-size: 150%;}
-    .form-inline button {width: 35%;}
+    #contact h1 {
+        font-size: 150%;
+    }
+
+    .form-inline button {
+        width: 35%;
+    }
+
+    /*Footer*/
+    .fbox {width: 25%;}
+    .fbox h1 {font-size: 150%;}
+    .fbox h2 {font-size: 90%;}
+    .fbox h3 {font-size: 70%;}
+    .fbox p {font-size: 55%;}
+    .fimg img {
+        width: 15%;
+        padding: 5px;
+    }
 
 }
