@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Switzerland!</title>
+    <link rel="icon" type="image/x-icon" href="images/logo1.png">
+    <!--Menu Bar Icon-->
+    <script src="https://kit.fontawesome.com/55c444d8c9.js" crossorigin="anonymous"></script>
+    <link href="css/stylemp.css" rel="stylesheet" />
+
+    <!--Font Type-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Life+Savers:wght@800&family=Source+Serif+4:ital,opsz,wght@1,8..60,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!--MainPage-->
+        <div id="mainpage">
+            <!--Header-->
+            <div id="header">
+                <!--Logo-->
+                <div id="logo">
+                    <img src="images/logo1.png">
+                </div>
+                <!--Menu-->
+                <div class="menu" id="mymenu">
+                    <div id="homeb">
+                        <a href="#mainpage"><b>Home</b></a>
+                    </div>
+                    <div id="placesb">
+                        <a href="#">Places</a>
+                    </div>
+                    <div id="trainsb">
+                        <a href="#">Trains</a>
+                    </div>
+                    <div id="hotelsb">
+                        <a href="#">Accommodation/Hotels</a>
+                    </div>
+                    <div id="foodsb">
+                        <a href="#">Foods</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i id="icons" class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#mainpage"><b>Home</b></a>
+                        <a href="#">Places</a>
+                        <a href="#">Trains</a>
+                        <a href="#">Accommodation/Hotels</a>
+                        <a href="#">Foods</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--MainPage-Content-->
+        </div>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("icons").style.display = "none";
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("icons").style.display = "block";
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+
+</html>
