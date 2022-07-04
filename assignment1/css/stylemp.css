@@ -7,9 +7,10 @@ font-family: 'Inter', sans-serif;
 font-family: 'Life Savers', cursive;
 font-family: 'Source Serif 4', serif;
 
-#container {
-    margin: auto;
-}
+#container {margin: auto;}
+h1 {font-weight: 800;}
+h2, h3 {font-weight: 700;}
+p {font-weight: 500;}
 
 /*MainPage*/
 #mainpage {
@@ -35,9 +36,8 @@ font-family: 'Source Serif 4', serif;
     margin: auto;
     margin-left: 10%;
 }
-#logo img {
-    width: 13%;
-}
+#logo img {width: 13%;}
+
 /*Header-Menu*/
 .menu {
     width: 50%;
@@ -51,9 +51,8 @@ font-family: 'Source Serif 4', serif;
     color: white;
     font-size: 110%;
 }
-.menu .icon {
-    display: none;
-}
+.menu a:hover {animation: .5s horizontal-shaking infinite alternate;}
+.menu .icon {display: none;}
 
 /*Header-Menu-DisplayOut*/
 .overlay {
@@ -140,17 +139,20 @@ i {
 #mpcontent h1 {
     font-family: 'Life Savers', cursive;
     font-size: 525%;
-    font-weight: 800;
     margin-top: 6%;
     margin-bottom: 7%;
 }
 #mpcontent p {
     font-size: 83%;
-    font-weight: 500;
     line-height: 160%;
     margin: 0;
 }
-.btn {
+/*MP-Content-Button*/
+#mpcontent a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#mpcontent a .btn {
     width: 140px;
     height: 42px;
     display: flex;
@@ -161,30 +163,93 @@ i {
     border-radius: 13px;
     margin-top: 7%;
 }
+#mpcontent a .btn:hover{
+    animation: .5s horizontal-shaking infinite alternate;
+    text-decoration:underline;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
 
 
+/*About*/
+#about {
+    display: flex;
+    width:100%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+#acontent {
+    display: flex;
+    width: 36.5%;
+    margin: auto;
+    margin-left: 8%;
+    flex-direction:column ;
+}
+#acontent h2 {font-size: 230%;}
+#aimg {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+}
 
+
+/*ThingsNeed2Know*/
+#know {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 0;
+    border-top: 5px solid #033571;
+    border-bottom: 5px solid #033571;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+}
+#know h2 {font-size: 230%;}
+#kcontent {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+.contentb {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    margin: 2%;
+    margin-left: 0;
+    margin-right: 3%;
+}
 
 
 
 
 @media screen and (max-width:1000px) {
 
-    .menu {
-        width: 80%;
-    }
-    #logo img {
-        width: 25%;
-    }
-    #mpcontent h1 {
-        font-size: 450%;
-    }
-    #mpcontent p {
-        font-size: 85%;
-    }
-    .menu a {
-        font-size: 95%;
-    }
+    /*MainPage*/
+    .menu {width: 80%;}
+    #logo img {width: 25%;}
+    #mpcontent h1 {font-size: 400%;}
+    #mpcontent p {font-size: 85%;}
+    .menu a {font-size: 95%;}
+
+    /*About*/
+    #about {flex-direction: column;}
+    #acontent {width: 80%;}
+    #aimg {width: 80%;}
+
+    #kcontent {flex-wrap: wrap;
+    justify-content: center;}
+    .contentb {width: 40%;}
 }
 
 
@@ -193,19 +258,10 @@ i {
 @media screen and (max-width:700px) {
 
     /*MainPage-Header*/
-    #header {
-        margin-top: 5%;
-    }
-
-    /*Header-Logo*/
-    #logo img {
-        width: 30%;
-    }
-
+    #header {margin-top: 5%;}
+    #logo img {width: 30%;}
     /*Header-Menu*/
-    .menu {
-        margin-top: 2%;
-    }
+    .menu {margin-top: 2%;}
     .menu a.icon {
         position: absolute;
         right: 10%;
@@ -216,37 +272,39 @@ i {
         font-size: 120%;
     }
     /*Header-Menu-DisplayOut*/
-    .overlay a {
-        font-size: 20px
-    }
+    .overlay a {font-size: 20px}
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
 
+    /*MainPage-Content*/
     #mpcontent {
         width: 50%;
         margin: 20%;
         margin-left: 8%;
         margin-bottom: 23%;
-
     }
     .solidrectangle {
         width: 65px;
         height: 10px;
         margin-bottom: 10%;
     }
-    #mpcontent p {
-        font-size: 95%;
-    }
-    #p1 {
-        display: none;
-    }
+    #mpcontent p {font-size: 95%;}
+    #p1 {display: none;}
     .btn {
         width: 110px;
         height: 35px;
         margin-top: 15%;
         font-size: 85%;
     }
+
+    #know {
+        margin-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .contentb {width: 75%;}
+
 }
