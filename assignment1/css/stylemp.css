@@ -165,15 +165,6 @@ i {
 }
 #mpcontent a .btn:hover{
     animation: .5s horizontal-shaking infinite alternate;
-    text-decoration:underline;
-}
-
-@keyframes horizontal-shaking {
-    0% { transform: translateX(0) }
-    25% { transform: translateX(5px) }
-    50% { transform: translateX(-5px) }
-    75% { transform: translateX(5px) }
-    100% { transform: translateX(0) }
 }
 
 
@@ -231,6 +222,61 @@ i {
 }
 
 
+/*Travel Info*/
+#tinfo {
+    margin: auto;
+    text-align: center;
+    background-color: #354259;
+    color: #ECE5C7;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 4%;
+}
+
+#tinfo h1{
+    font-family: 'Life Savers', cursive;
+    font-size: 420%;    
+    margin: 8%;
+    margin-top: 5%;
+    margin-bottom: 0;
+
+}
+#tinfo h2{
+    font-family: 'Life Savers', cursive;
+    font-size: 262%;
+    font-weight: 800;
+    text-align: right;
+    margin: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-right: 15%;
+
+}
+#tinfo p{
+    font-size: 230%;
+    font-weight: 600;
+    margin: 8%;
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+#tinfo p a{
+    color: #A5BECC;
+}
+#tinfo p a:hover{
+    color: #81d9a1;
+}
+
+
+
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
 
 
 @media screen and (max-width:1000px) {
@@ -250,6 +296,11 @@ i {
     #kcontent {flex-wrap: wrap;
     justify-content: center;}
     .contentb {width: 40%;}
+
+    /*TravelInfo*/
+    #tinfo p{
+        font-size: 180%;
+    }
 }
 
 
@@ -300,6 +351,7 @@ i {
         font-size: 85%;
     }
 
+    /*Thing2know*/
     #know {
         margin-top: 10%;
         padding-top: 5%;
@@ -307,4 +359,30 @@ i {
     }
     .contentb {width: 75%;}
 
+    /*TravelInfo*/
+    #tinfo {
+        width: 80%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #tinfo h1{
+        font-size: 280%;
+        margin-top:20%;  
+        padding-left: 10%;
+        padding-right: 10%;  
+    }
+    #tinfo h2{
+        font-size: 157%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        padding-right: 0%;
+    }
+    #tinfo p{
+        font-size: 131%;
+        line-height: 120%;
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-bottom: 6%;
+    }
 }
