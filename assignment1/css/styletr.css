@@ -6,14 +6,14 @@ body {
 #container {margin: auto;}
 h1 {font-weight: 800;}
 h2, h3 {font-weight: 700;}
-p {font-weight: 500;}
+p {font-weight: 400;}
 a:hover {
     animation: .5s horizontal-shaking infinite alternate;
 }
 
-/*MainPage*/
+/*Trains-MainPage*/
 #mainpagetr {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/trains/trainsbanner-1.1.jpg);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-/*MP-Header*/
+/*T-MP-Header*/
 #header {
     display: flex;
     width: 100%;
@@ -120,24 +120,76 @@ i {
     padding-left: 20px;
 }
 
-/*MP-Content*/
+/*T-MP-Content*/
 #mpcontent {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     margin: 9%;
-    margin-top: 17%;
-    margin-bottom: 2%;
-    margin-left: 28%;
+    margin-top: 10%;
+    margin-bottom: 11%;
+    margin-left: 10%;
     color: #FFFFFF;
-    text-align: center;
+}
+#mpcontent h6 {
+    font-family: 'Life Savers', cursive;
+    font-size: 130%;
+    margin-bottom: 1%;
 }
 #mpcontent h1 {
     font-family: 'Life Savers', cursive;
-    font-size: 525%;
-    padding-top: 8%;
-    margin-bottom: 0;
+    font-size: 350%;
+    margin-bottom: 5%;
+    line-height: 150%;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding-right: 20%;
 }
+
+/*Trains-Texts*/
+#trtext {
+    width: 80%;
+    margin: auto;
+    font-size: 180%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+/*Image Slider*/
+.slideb {
+    margin: auto;
+    margin-bottom: 8%;
+    width: 80%;
+    background-color: #DFBB9D;
+    display: flex;
+    flex-direction: column;
+}
+.slider {overflow: hidden;}
+.slider figure {
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+.slider figure img {
+    width: 25%;
+    float: left;
+}
+.slidecontent {
+    margin-top: 3%;
+    display: flex;
+    margin-bottom: 3%;
+}
+.scontentleft {
+    width: 40%;
+    margin-left: 5%;
+}
+.scontentright {
+    width: 40%;
+    margin-left: 5%;
+}
+
 
 
 
@@ -216,20 +268,38 @@ i {
     100% { transform: translateX(0) }
 }
 
+@keyframes slider {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    95% { left: -300%; }
+    100% { left: -300%; }
+}
+
 
 @media screen and (max-width:1000px) {
 
-    /*MainPage*/
+    /*Trains-MainPage*/
     .menu {width: 80%;}
     #logo img {width: 25%;}
     #mpcontent {
         width: 80%;
-        margin-top: 30%;
-        margin-bottom: 3%;
-        margin-left: 20%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        margin-left: 10%;
     }
-    #mpcontent h1 {font-size: 400%;}
+    #mpcontent h1 {
+        font-size: 400%;
+        padding-right: 0;
+    }
 
+    /*Trains-Texts*/
+    #trtext {
+        font-size: 130%;
+    }
 
 
 
@@ -257,9 +327,9 @@ i {
 @media screen and (max-width:700px) {
 
     #mainpagetr {
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp-1.jpg);
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/trains/trainsbanner.jpg);
     }
-    /*MainPage-Header*/
+    /*Trains-MainPage-Header*/
     #header {margin-top: 5%;}
     #logo img {width: 30%;}
     /*Header-Menu*/
@@ -280,16 +350,20 @@ i {
         top: 15px;
         right: 35px;
     }
-
-    /*MainPage-Content*/
+    /*Trains-MainPage-Content*/
     #mpcontent {
-        margin-top: 60%;
+        margin-top: 45%;
         margin-left: 12%;
-        margin-bottom: 6%;
+        margin-bottom: 20%;
     }
     #mpcontent h1 {
-        font-size: 380%;
-        padding-right: 5%;
+        font-size: 300%;
+        margin-left: 5%;
+    }
+    /*Trains-Texts*/
+    #trtext {
+        text-align: center;
+        font-size: 105%;
     }
 
 
