@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods in Switzerland</title>
+    <link rel="icon" type="image/x-icon" href="images/logo1.png">
+    <!--Menu Bar Icon-->
+    <script src="https://kit.fontawesome.com/55c444d8c9.js" crossorigin="anonymous"></script>
+    <link href="css/stylefo.css" rel="stylesheet" />
+
+    <!--Font Type-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@800&family=Piazzolla:ital,opsz,wght@0,8..30,400;0,8..30,500;0,8..30,600;0,8..30,700;0,8..30,800;1,8..30,600;1,8..30,700&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!--MainPage-->
+        <div id="mainpagefd">
+            <!--MP-Header-->
+            <div id="header">
+                <!--Logo-->
+                <div id="logo">
+                    <img src="images/logo1.png">
+                </div>
+                <!--Menu-->
+                <div class="menu" id="mymenu">
+                    <div class="homeb">
+                        <a href="indexmp.html" target="_self">Home</a>
+                    </div>
+                    <div class="placesb">
+                        <a href="indexpl.html" target="_self">Places</a>
+                    </div>
+                    <div class="trainsb">
+                        <a href="indextr.html" target="_self">Trains</a>
+                    </div>
+                    <div class="hotelsb">
+                        <a href="indexac.html" target="_self">Accommodation/Hotels</a>
+                    </div>
+                    <div class="foodsb">
+                        <a href="#mainpagefd"><b>Foods</b></a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i id="icons" class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="indexmp.html" target="_self">Home</a>
+                        <a href="indexpl.html" target="_self">Places</a>
+                        <a href="indextr.html" target="_self">Trains</a>
+                        <a href="indexac.html" target="_self">Accommodation/Hotels</a>
+                        <a href="#mainpagefd"><b>Foods</b></a>
+                    </div>
+                </div>
+            </div>
+            <!--MP-Content-->
+            <div id="mpcontent">
+                <h1>Tourist Attraction in Switzerland</h1>
+            </div>
+        </div>
+
+
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="fmenu">
+                <div class="homeb">
+                    <a href="indexmp.html" target="_self">Home</a>
+                </div>
+                <div class="placesb">
+                    <a href="indexpl.html" target="_self">Places</a>
+                </div>
+                <div class="trainsb">
+                    <a href="indextr.html" target="_self">Trains</a>
+                </div>
+                <div class="hotelsb">
+                    <a href="indexac.html" target="_self">Accommodation/Hotels</a>
+                </div>
+                <div class="foodsb">
+                    <a href="#mainpagefd"><b>Foods</b></a>
+                </div>
+            </div>
+            <div class="copyr">
+                <p>&copy; 2022 Kitty Huong Chee Shin</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("icons").style.display = "none";
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("icons").style.display = "block";
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+
+</html>

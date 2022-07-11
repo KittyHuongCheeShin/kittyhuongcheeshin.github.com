@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: 'Piazzolla', serif;
+}
+
+#container {margin: auto;}
+h1 {font-weight: 800;}
+h2, h3 {font-weight: 700;}
+p {font-weight: 500;}
+a:hover {
+    animation: .5s horizontal-shaking infinite alternate;
+}
+
+/*MainPage*/
+#mainpageac {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp.jpg);
+    mix-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+/*MP-Header*/
+#header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5%;
+    justify-content: space-between;
+}
+/*Header-Logo*/
+#logo {
+    width: 50%;
+    margin: auto;
+    margin-left: 10%;
+}
+#logo img {width: 13%;}
+
+/*Header-Menu*/
+.menu {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 1.5%;
+    justify-content: center;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+}
+.menu .icon {display: none;}
+
+/*Header-Menu-DisplayOut*/
+.overlay {
+    height: 100%;
+    /*show for whole screen*/
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*when open use 0.5 second*/
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*MenuBox*/
+i {
+    display: flex;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+.homeb {
+    display: flex;
+    padding-left: 20px;
+}
+.placesb {
+    display: flex;
+    padding-left: 20px;
+}
+.trainsb {
+    display: flex;
+    padding-left: 20px;
+}
+.hotelsb {
+    display: flex;
+    padding-left: 20px;
+}
+.foodsb {
+    display: flex;
+    padding-left: 20px;
+}
+
+/*MP-Content*/
+#mpcontent {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 9%;
+    margin-top: 17%;
+    margin-bottom: 2%;
+    margin-left: 28%;
+    color: #FFFFFF;
+    text-align: center;
+}
+#mpcontent h1 {
+    font-family: 'Life Savers', cursive;
+    font-size: 525%;
+    padding-top: 8%;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: #495371;
+    flex-direction: column;
+    font-family: 'Source Serif 4', serif;
+}
+.fmenu {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    justify-content: center;
+    font-weight: 700;
+}
+.fmenu a {
+    text-decoration: none;
+    color: #B6BAC6;
+    font-size: 130%;
+}
+.fmenu a:hover {
+    color: #c0d846;
+}
+.copyr {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.copyr p {
+    font-size: 94.5%;
+    font-weight: 400;
+    margin-top: 2%;
+}
+.fmenu .homeb {
+    display: flex;
+    padding-right: 70px;
+}
+.fmenu .placesb {
+    display: flex;
+    padding-right: 70px;
+}
+.fmenu .trainsb {
+    display: flex;
+    padding-right: 70px;
+}
+.fmenu .hotelsb {
+    display: flex;
+    padding-right: 70px;
+}
+.fmenu .foodsb {
+    display: flex;
+    padding-right: 70px;
+}
+
+
+
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+
+@media screen and (max-width:1000px) {
+
+    /*MainPage*/
+    .menu {width: 80%;}
+    #logo img {width: 25%;}
+    #mpcontent {
+        width: 80%;
+        margin-top: 30%;
+        margin-bottom: 3%;
+        margin-left: 20%;
+    }
+    #mpcontent h1 {font-size: 400%;}
+
+
+
+
+    /*Footer*/
+    .fmenu .homeb {
+        padding-right: 10px;
+    }
+    .fmenu .placesb {
+        padding-right: 10px;
+    }
+    .fmenu .trainsb {
+        padding-right: 10px;
+    }
+    .fmenu .hotelsb {
+        padding-right: 10px;
+    }
+    .fmenu .foodsb {
+        padding-right: 10px;
+    }
+}
+
+
+
+/*Mobile screen size*/
+@media screen and (max-width:700px) {
+
+    #mainpageac {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp-1.jpg);
+    }
+    /*MainPage-Header*/
+    #header {margin-top: 5%;}
+    #logo img {width: 30%;}
+    /*Header-Menu*/
+    .menu {margin-top: 2%;}
+    .menu a.icon {
+        position: absolute;
+        right: 10%;
+        display: block;
+    }
+    .menu a {
+        display: none;
+        font-size: 120%;
+    }
+    /*Header-Menu-DisplayOut*/
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    /*MainPage-Content*/
+    #mpcontent {
+        margin-top: 60%;
+        margin-left: 12%;
+        margin-bottom: 6%;
+    }
+    #mpcontent h1 {
+        font-size: 380%;
+        padding-right: 5%;
+    }
+
+
+    /*Footer*/
+    .fmenu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fmenu a {font-size: 150%;}
+    .fmenu .homeb {
+        padding-top: 30px;
+        padding-right: 0;
+    }
+    .fmenu .placesb {
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .fmenu .trainsb {
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .fmenu .hotelsb {
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .fmenu .foodsb {
+        padding-top: 20px;
+        padding-right: 0;
+    }
+    .copyr {
+        margin-top: 10%;
+        padding-bottom: 4%;
+        font-size: 100%;
+    }
+}
