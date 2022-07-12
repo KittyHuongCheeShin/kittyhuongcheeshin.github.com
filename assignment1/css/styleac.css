@@ -142,6 +142,7 @@ i {
     display: flex;
     width: 100%;
 }
+
 /*MainPage-Bottom*/
 #bmainleft {
     background-color: #FFE55F;
@@ -164,6 +165,7 @@ i {
     display: flex;
     width: 100%;
 }
+
 
 /*Content1-Typically Swiss*/
 .content {
@@ -245,6 +247,7 @@ a .btn:hover{
     border-radius: 10px;
 }
 
+
 /*Content2-Wellness*/
 .contentb {
     display: flex;
@@ -307,6 +310,7 @@ a .btn:hover{
     text-decoration: none;
     justify-content: flex-start;
 }
+
 
 /*Footer*/
 .footer {
