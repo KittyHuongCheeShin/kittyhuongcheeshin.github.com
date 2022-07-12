@@ -11,9 +11,9 @@ a:hover {
     animation: .5s horizontal-shaking infinite alternate;
 }
 
-/*MainPage*/
-#mainpageac {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp.jpg);
+/*MainPage-Top*/
+#topmain {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/accommodations/accommodationbannerbig.jpg);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,11 +124,11 @@ i {
 #mpcontent {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     margin: 9%;
-    margin-top: 17%;
+    margin-top: 15%;
     margin-bottom: 2%;
-    margin-left: 28%;
+    margin-left: 2%;
     color: #FFFFFF;
     text-align: center;
 }
@@ -138,7 +138,112 @@ i {
     padding-top: 8%;
     margin-bottom: 0;
 }
+#bottommain {
+    display: flex;
+    width: 100%;
+}
+/*MainPage-Bottom*/
+#bmainleft {
+    background-color: #FFE55F;
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20%;
+}
+#bmainleft h1 {
+    font-family: 'Life Savers', cursive;
+    font-size: 425%;
+    margin-left: 10%;
+}
+#bmainright {
+    display: flex;
+    width: 35%;
+}
+#bmainright img{
+    display: flex;
+    width: 100%;
+}
 
+/*Content1-Typically Swiss*/
+.content {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 6%;
+    border-bottom-color: #FF3D00;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+}
+.text {
+    width: 30%;
+    margin: 5%;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+.text h2 {
+    font-weight: 500;
+    color: #DF711B;
+    font-size: 350%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.text p {
+    font-size: 150%;
+    padding-right: 15%;
+}
+#abutton a {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+a .btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 7%;
+    background: linear-gradient(102.3deg, #7B7B64 -4.62%, #AB4E3F 91.18%, #FE0000 178.22%);
+}
+a .btn:hover{
+    animation: .5s horizontal-shaking infinite alternate;
+}
+#acsbox {
+    width: 40%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.row h5 {
+    font-weight: 500;
+    font-size: 130%;
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 8%;
+}
+.row img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.box1 {
+    width: 40%;
+    background-color: #FFE699;
+    border-radius: 10px;
+
+}
+.box2 {
+    width: 40%;
+    background-color: #FFE699;
+    margin-left: 10%;
+    border-radius: 10px;
+}
 
 
 
@@ -216,6 +321,10 @@ i {
     100% { transform: translateX(0) }
 }
 
+@media screen and (min-width:700px) {
+    /*MainPage-Bottom*/
+    #bottommain {display: none;}
+}
 
 @media screen and (max-width:1000px) {
 
@@ -230,36 +339,57 @@ i {
     }
     #mpcontent h1 {font-size: 400%;}
 
-
+    /*Content1-Typically Swiss*/
+    .content {
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    .text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .text h2 {
+        padding: 10%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .text p {padding-right: 0;}
+    #abutton a {justify-content: center;}
+    a .btn {
+        width: 300px;
+        height: 100px;
+        font-size: 130%;
+    }
+    #acsbox {
+        width: 70%;
+        margin-top: 0;
+    }
+    .row {margin-bottom: 5%;}
+    .box1 {width: 50%;}
+    .box2 {
+        width: 50%;
+        margin-left: 5%;
+    }
 
 
     /*Footer*/
-    .fmenu .homeb {
-        padding-right: 10px;
-    }
-    .fmenu .placesb {
-        padding-right: 10px;
-    }
-    .fmenu .trainsb {
-        padding-right: 10px;
-    }
-    .fmenu .hotelsb {
-        padding-right: 10px;
-    }
-    .fmenu .foodsb {
-        padding-right: 10px;
-    }
+    .fmenu .homeb {padding-right: 10px;}
+    .fmenu .placesb {padding-right: 10px;}
+    .fmenu .trainsb {padding-right: 10px;}
+    .fmenu .hotelsb {padding-right: 10px;}
+    .fmenu .foodsb {padding-right: 10px;}
 }
 
 
 
 /*Mobile screen size*/
 @media screen and (max-width:700px) {
-
-    #mainpageac {
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp-1.jpg);
+    /*MainPage-Top*/
+    #topmain {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/accommodations/accommodationbannerbig1.jpg);
     }
-    /*MainPage-Header*/
+    /*Top-Header*/
     #header {margin-top: 5%;}
     #logo img {width: 30%;}
     /*Header-Menu*/
@@ -283,14 +413,40 @@ i {
 
     /*MainPage-Content*/
     #mpcontent {
-        margin-top: 60%;
-        margin-left: 12%;
-        margin-bottom: 6%;
+        margin-top: 40%;
+        margin-left: 10%;
+        margin-bottom: 40%;
     }
-    #mpcontent h1 {
-        font-size: 380%;
-        padding-right: 5%;
+    #mpcontent h1 {display: none;}
+
+    /*MainPage-Bottom*/
+    #bottommain {flex-direction: column;}
+    #bmainleft {
+        width: 100%;
+        padding-right: 0;
     }
+    #bmainleft h1 {font-size: 300%;}
+    #bmainright {width: 100%;}
+
+    
+    /*Content1-Typically Swiss*/
+    .text h2 {font-size: 250%;}
+    .text p {
+        font-size: 130%;
+        padding-right: 0;
+    }
+    a .btn {
+        width: 200px;
+        height: 60px;
+        font-size: 94%;
+    }
+    #acsbox {
+        width: 80%;
+        margin-top: 3%;
+    }
+    .row h5 {font-size: 105%;}
+
+
 
 
     /*Footer*/

@@ -21,47 +21,97 @@
     <div id="container">
         <!--MainPage-->
         <div id="mainpageac">
-            <!--MP-Header-->
-            <div id="header">
-                <!--Logo-->
-                <div id="logo">
-                    <img src="images/logo1.png">
+            <!--MP-Top-->
+            <div id="topmain">
+                <!--MP-Header-->
+                <div id="header">
+                    <!--Logo-->
+                    <div id="logo">
+                        <img src="images/logo1.png">
+                    </div>
+                    <!--Menu-->
+                    <div class="menu" id="mymenu">
+                        <div class="homeb">
+                            <a href="indexmp.html" target="_self">Home</a>
+                        </div>
+                        <div class="placesb">
+                            <a href="indexpl.html" target="_self">Places</a>
+                        </div>
+                        <div class="trainsb">
+                            <a href="indextr.html" target="_self">Trains</a>
+                        </div>
+                        <div class="hotelsb">
+                            <a href="#mainpageac"><b>Accommodation/Hotels</b></a>
+                        </div>
+                        <div class="foodsb">
+                            <a href="/indexipgress.html" target="_blank">Foods</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icons" class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="indexmp.html" target="_self">Home</a>
+                            <a href="indexpl.html" target="_self">Places</a>
+                            <a href="indextr.html" target="_self">Trains</a>
+                            <a href="#mainpageac"><b>Accommodation/Hotels</b></a>
+                            <a href="/indexipgress.html" target="_blank">Foods</a>
+                        </div>
+                    </div>
                 </div>
-                <!--Menu-->
-                <div class="menu" id="mymenu">
-                    <div class="homeb">
-                        <a href="indexmp.html" target="_self">Home</a>
-                    </div>
-                    <div class="placesb">
-                        <a href="indexpl.html" target="_self">Places</a>
-                    </div>
-                    <div class="trainsb">
-                        <a href="indextr.html" target="_self">Trains</a>
-                    </div>
-                    <div class="hotelsb">
-                        <a href="#mainpageac"><b>Accommodation/Hotels</b></a>
-                    </div>
-                    <div class="foodsb">
-                        <a href="/indexipgress.html" target="_blank">Foods</a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
-                        <i id="icons" class="fa-solid fa-bars"></i>
-                    </a>
-                </div>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="indexmp.html" target="_self">Home</a>
-                        <a href="indexpl.html" target="_self">Places</a>
-                        <a href="indextr.html" target="_self">Trains</a>
-                        <a href="#mainpageac"><b>Accommodation/Hotels</b></a>
-                        <a href="/indexipgress.html" target="_blank">Foods</a>
-                    </div>
+                <!--MP-Content-->
+                <div id="mpcontent">
+                    <h1>Accommodation / Hotels in Switzerland</h1>
                 </div>
             </div>
-            <!--MP-Content-->
-            <div id="mpcontent">
-                <h1>Tourist Attraction in Switzerland</h1>
+            <!--MP-Bottom-->
+            <div id="bottommain">
+                <div id="bmainleft">
+                    <h1>Accommodation / Hotels in Switzerland</h1>
+                </div>
+                <div id="bmainright">
+                    <img src="images/accommodations/accommodationbanner.jpg">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="text">
+                <h2>Typically Swiss Hotels</h2>
+                <p>Typically Swiss hotels combine regional architecture with a genuine Swiss atmosphere and are as
+                    diverse as Switzerland itself. But all of them - from city palaces and country inns to Alpine summer
+                    houses - are characterised by their hosts, offering local specialities and an authentic Swiss
+                    holiday experience.</p>
+                <div id="abutton">
+                    <a href="https://www.myswitzerland.com/en-my/accommodations/hotels/typically-swiss-hotels/">
+                        <div class="btn">GET STARTED&emsp;&emsp;&#8594</div>
+                    </a>
+                </div>
+            </div>
+            <div id="acsbox">
+                <div class="row">
+                    <div class="box1">
+                        <img src="images/accommodations/hotelsAlpenblickZermatt.jpg">
+                        <h5>Hotel Alpenblick, Zermatt</h5>
+                    </div>
+                    <div class="box2">
+                        <img src="images/accommodations/hotelsboutique2.jpg">
+                        <h5>Botique-Hotel Schlussel, Beckenried</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box1">
+                        <img src="images/accommodations/hotelsRomantik_Hotel_Castello_Seeschloss-Ascona3.jpg">
+                        <h5>Romantik Hotel Castello Seeschloss, Ascona</h5>
+                    </div>
+                    <div class="box2">
+                        <img src="images/accommodations/hotelsseehotelkastanienbaum4.jpg">
+                        <h5>Seehotel Kastanienbaum, Kastanienbaum</h5>
+                    </div>
+                </div>
             </div>
         </div>
 
