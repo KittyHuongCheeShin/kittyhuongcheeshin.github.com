@@ -194,7 +194,7 @@ i {
     font-size: 150%;
     padding-right: 15%;
 }
-#abutton a {
+.abutton a {
     display: flex;
     text-decoration: none;
     justify-content: flex-end;
@@ -245,10 +245,68 @@ a .btn:hover{
     border-radius: 10px;
 }
 
-
-
-
-
+/*Content2-Wellness*/
+.contentb {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+}
+#leftbox {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+}
+.picboxrow {
+    display: flex;
+    border-bottom-color: #594F4F;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding-bottom: 2%;
+    width: 90%;
+    margin-top: 3%;
+}
+.picboxtext {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.picboxtext h5 {
+    font-weight: 700;
+    font-size: 150%;
+    padding-right: 20%;
+}
+.boxpic {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxpic img{
+    width: 100%;
+    border-radius: 10px;
+}
+.picboxrow1 {
+    display: flex;
+    width: 90%;
+    margin-top: 3%;
+}
+.contentb .text{
+    margin-left: 5%;
+}
+.contentb .text h2{
+    margin-top: 8%;
+    margin-bottom: 15%;
+}
+#bbutton {margin-top: 10%;}
+#bbutton a {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-start;
+}
 
 /*Footer*/
 .footer {
@@ -320,7 +378,10 @@ a .btn:hover{
     75% { transform: translateX(5px) }
     100% { transform: translateX(0) }
 }
-
+@media screen and (min-width:1000px) {
+    /*MainPage-Bottom*/
+    .contentb .abutton {display: none;}
+}
 @media screen and (min-width:700px) {
     /*MainPage-Bottom*/
     #bottommain {display: none;}
@@ -355,10 +416,10 @@ a .btn:hover{
         padding-top: 0;
     }
     .text p {padding-right: 0;}
-    #abutton a {justify-content: center;}
+    .abutton a {justify-content: center;}
     a .btn {
         width: 300px;
-        height: 100px;
+        height: 80px;
         font-size: 130%;
     }
     #acsbox {
@@ -372,6 +433,24 @@ a .btn:hover{
         margin-left: 5%;
     }
 
+    /*Content2-Wellness*/
+    .contentb {flex-direction: column-reverse;}
+    .contentb .text{margin-left: 12%;}
+    .contentb .text h2{
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    .contentb #bbutton {display: none;}
+    #leftbox {width: 100%;}
+    .picboxrow {
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+    .picboxrow1 {
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+    .picboxtext h5 {padding-right: 0;}
 
     /*Footer*/
     .fmenu .homeb {padding-right: 10px;}
@@ -446,8 +525,13 @@ a .btn:hover{
     }
     .row h5 {font-size: 105%;}
 
-
-
+    /*Content2-Wellness*/
+    .picboxtext {width: 50%;}
+    .boxpic {width: 50%;}
+    .picboxtext h5 {
+        font-size: 105%;
+        padding-left: 3%;
+    }
 
     /*Footer*/
     .fmenu {
