@@ -13,13 +13,17 @@ a:hover {
 
 /*MainPage*/
 #mainpagefd {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp.jpg);
+    width: 100%;
+    display: flex;
+}
+#mpfdbigleft {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/foods/foodsbanner.png);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 /*MP-Header*/
 #header {
@@ -92,7 +96,6 @@ a:hover {
     right: 45px;
     font-size: 60px;
 }
-
 /*MenuBox*/
 i {
     display: flex;
@@ -119,26 +122,125 @@ i {
     display: flex;
     padding-left: 20px;
 }
-
-/*MP-Content*/
-#mpcontent {
+/*MP-LeftTitle*/
+#mptitle {
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 9%;
-    margin-top: 17%;
-    margin-bottom: 2%;
-    margin-left: 28%;
-    color: #FFFFFF;
-    text-align: center;
+    justify-content: center;
+    width: 45%;
+    margin-top: 0;
+    margin-bottom: 13%;
+    margin-left: 50%;
+    color: #ecf9fe;
+    text-align: right;
 }
-#mpcontent h1 {
+#mptitle h1 {
     font-family: 'Life Savers', cursive;
-    font-size: 525%;
-    padding-top: 8%;
+    font-size: 700%;
+    padding-top: 3%;
     margin-bottom: 0;
 }
 
+/*MP-Center*/
+#mpfdbigcenter {
+    width: 25%;
+    background-color: #032D3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#centertop {
+    width: 100%;
+}
+.solidrectangle {
+    background-color: #FFFFFF;
+    width: 170px;
+    height: 3px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 40% ;
+}
+#centertop h2{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 420%;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+#center {
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+#center h2{
+    font-style: italic;
+    font-size: 250%;
+    font-weight: 600;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin: 0;
+}
+.mpimg {
+    margin-bottom: 0%;
+    position: relative;
+}
+.mpimg img{
+    width: 100%;
+}
+.text-block {
+    position: absolute;
+    bottom: 81.5%;
+    background-color: #3BACB633;
+    color: #032D3C;
+    width: 100%;
+}
+.text-block h3 {
+    margin: 0;
+    font-size: 158%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+}
+/*MP-Right*/
+#mpfdbigright {
+    width: 25%;
+    color: #FFFFFF;
+    background-color: #032D3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mpfdbigright .text-block {
+    bottom:1.5%;
+}
+#righttext {
+    padding: 10%;
+    padding-right: 13%;
+    padding-top: 8%;
+}
+#righttext h4 {
+    font-size: 105%;
+    font-weight: 700;
+    margin-top: 0;
+    margin-right: 0;
+}
+#righttext p {
+    font-size: 84%;
+    margin-bottom: 10%;
+    padding-right: 8%;
+    margin-right: 0;
+}
+#righttext a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#righttext a:hover {
+    text-decoration:underline;
+}
 
 
 
@@ -216,19 +318,24 @@ i {
     100% { transform: translateX(0) }
 }
 
+@media screen and (min-width:700px) {
+    /*MainPage-Right*/
+    #mpfdbigcenter {display: none;}
+    #mpfdbigright {display: none;}
+}
 
 @media screen and (max-width:1000px) {
 
     /*MainPage*/
     .menu {width: 80%;}
     #logo img {width: 25%;}
-    #mpcontent {
-        width: 80%;
-        margin-top: 30%;
-        margin-bottom: 3%;
-        margin-left: 20%;
+    #mptitle {
+        width: 30%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        margin-left: 60%;
     }
-    #mpcontent h1 {font-size: 400%;}
+    #mptitle h1 {font-size: 400%;}
 
 
 
@@ -255,9 +362,10 @@ i {
 
 /*Mobile screen size*/
 @media screen and (max-width:700px) {
-
+    /*MainPage-Foods*/
     #mainpagefd {
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp-1.jpg);
+        flex-direction: column;
+        width: 100%;
     }
     /*MainPage-Header*/
     #header {margin-top: 5%;}
@@ -280,17 +388,35 @@ i {
         top: 15px;
         right: 35px;
     }
-
-    /*MainPage-Content*/
-    #mpcontent {
+    /*MainPage-LeftTitle*/
+    #mptitle {
         margin-top: 60%;
-        margin-left: 12%;
-        margin-bottom: 6%;
+        margin-left: 0%;
+        margin-bottom: 30%;
     }
-    #mpcontent h1 {
-        font-size: 380%;
-        padding-right: 5%;
+    #mptitle h1 {
+        display: none;
     }
+    /*MainPage-Center*/
+    #mpfdbigcenter {width: 100%;}
+    .mpimg {
+        width: 80%;
+        margin-top: 10%
+    }
+    .solidrectangle {
+        width: 250px;
+        height: 5px;
+        margin-top: 8%;
+        margin-left: 30% ;
+    }
+    #centertop h2{
+        margin-left: 15%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    /*MainPage-Right*/
+    #mpfdbigright {width: 100%;}
+
 
 
     /*Footer*/

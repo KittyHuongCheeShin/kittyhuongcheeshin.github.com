@@ -21,51 +21,87 @@
     <div id="container">
         <!--MainPage-->
         <div id="mainpagefd">
-            <!--MP-Header-->
-            <div id="header">
-                <!--Logo-->
-                <div id="logo">
-                    <img src="images/logo1.png">
+            <!--MP-LeftBig-->
+            <div id="mpfdbigleft">
+                <!--MP-Header-->
+                <div id="header">
+                    <!--Logo-->
+                    <div id="logo">
+                        <img src="images/logo1.png">
+                    </div>
+                    <!--Menu-->
+                    <div class="menu" id="mymenu">
+                        <div class="homeb">
+                            <a href="indexmp.html" target="_self">Home</a>
+                        </div>
+                        <div class="placesb">
+                            <a href="indexpl.html" target="_self">Places</a>
+                        </div>
+                        <div class="trainsb">
+                            <a href="indextr.html" target="_self">Trains</a>
+                        </div>
+                        <div class="hotelsb">
+                            <a href="indexac.html" target="_self">Accommodation/Hotels</a>
+                        </div>
+                        <div class="foodsb">
+                            <a href="#mainpagefd"><b>Foods</b></a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icons" class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="indexmp.html" target="_self">Home</a>
+                            <a href="indexpl.html" target="_self">Places</a>
+                            <a href="indextr.html" target="_self">Trains</a>
+                            <a href="indexac.html" target="_self">Accommodation/Hotels</a>
+                            <a href="#mainpagefd"><b>Foods</b></a>
+                        </div>
+                    </div>
                 </div>
-                <!--Menu-->
-                <div class="menu" id="mymenu">
-                    <div class="homeb">
-                        <a href="indexmp.html" target="_self">Home</a>
-                    </div>
-                    <div class="placesb">
-                        <a href="indexpl.html" target="_self">Places</a>
-                    </div>
-                    <div class="trainsb">
-                        <a href="indextr.html" target="_self">Trains</a>
-                    </div>
-                    <div class="hotelsb">
-                        <a href="indexac.html" target="_self">Accommodation/Hotels</a>
-                    </div>
-                    <div class="foodsb">
-                        <a href="#mainpagefd"><b>Foods</b></a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
-                        <i id="icons" class="fa-solid fa-bars"></i>
-                    </a>
+                <!--MP-LeftTitle-->
+                <div id="mptitle">
+                    <h1>Foods In Switzerland</h1>
                 </div>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="indexmp.html" target="_self">Home</a>
-                        <a href="indexpl.html" target="_self">Places</a>
-                        <a href="indextr.html" target="_self">Trains</a>
-                        <a href="indexac.html" target="_self">Accommodation/Hotels</a>
-                        <a href="#mainpagefd"><b>Foods</b></a>
+            </div>
+            <!--MP-Center-->
+            <div id="mpfdbigcenter">
+                <div id="centertop">
+                    <div class="solidrectangle"></div>
+                    <h2>Foods</h2>
+                </div>
+                <div id="center">
+                    <h2>IN SWITZERLAND</h2>
+                </div>
+                <div class="mpimg">
+                    <img src="images/foods/foodbanner2.jpg">
+                    <div class="text-block">
+                        <h3>Raclette Cheese</h3>
                     </div>
                 </div>
             </div>
-            <!--MP-Content-->
-            <div id="mpcontent">
-                <h1>Tourist Attraction in Switzerland</h1>
+            <!--MP-Right-->
+            <div id="mpfdbigright">
+                <div class="mpimg">
+                    <img src="images/foods/foodbanner3.jpg">
+                    <div class="text-block">
+                        <h3>La Cuchaule</h3>
+                    </div>
+                </div>
+                <div id="righttext">
+                    <h4>Culinary Switzerland is a gourmet’s paradise to be explored afresh wherever you go as the menu in addition to a modest number of national dishes mainly features regional Specialities.</h4>
+                    <p>Swiss cuisine combines influences from the German, French and North Italian cuisine. However, it varies greatly from region to region with the language divisions constituting a rough boundary outline. Mind you, many dishes have crossed the local borders and become firm favourites throughout Switzerland.</p>
+                    <a href="https://www.myswitzerland.com/en/planning/about-switzerland/custom-and-tradition/typical-food/">READ MORE...</a>
+                </div> 
             </div>
         </div>
 
-
+        <!--Content-->
+        <div id="fdcontent">
+            
+        </div>
 
         <!--Footer-->
         <div class="footer">
