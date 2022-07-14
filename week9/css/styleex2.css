@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+tr td {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 8%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.purple{
+    color: rgb(77, 33, 77);
+    border: 2px solid rgb(77, 33, 77);
+    background-color: #D0C9E0;
+}
+.lightblue{
+    color: rgb(2, 134, 179);
+    border: 2px solid rgb(2, 134, 179);
+    background-color: #BCDEEF;
+}
+.darkblue{
+    color: rgb(3, 64, 113);
+    border: 2px solid rgb(3, 64, 113);
+    background-color: #B1D1E1;
+}
+.darkyellow{
+    color: rgb(128, 124, 0);
+    border: 2px solid rgb(128, 124, 0);
+    background-color: #ebef9a;
+}
+.yellow{
+    color: rgb(175, 165, 16);
+    border: 2px solid rgb(175, 165, 16);
+    background-color: #faff8e;
+}
+.green{
+    color: rgb(50, 158, 75);
+    border: 2px solid rgb(50, 158, 75);
+    background-color: #CCE9E7;
+}
+.red{
+    color: rgb(168, 0, 0);
+    border: 2px solid rgb(168, 0, 0);
+    background-color: #F1CFD5;
+}
+.emptylightblue {
+    background-color: rgba(173, 198, 230, 0.519);
+    border-color: none;
+}
+.emptyyellow {
+    background-color: rgba(248, 243, 145, 0.711);
+    border-color: none;
+}
+.emptygreen {
+    background-color: rgba(193, 255, 160, 0.684);
+    border-color: none;
+}
+h3 {
+    font-size: 300%;
+    margin: 0;
+    font-weight: 100;
+}

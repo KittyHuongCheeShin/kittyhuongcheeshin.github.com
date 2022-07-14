@@ -1,0 +1,22 @@
+body {
+    width: 100%;
+    font-size: 200%;
+    margin: 10%;
+    margin-left: 25%;
+}
+
+table {
+    width: 30%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
