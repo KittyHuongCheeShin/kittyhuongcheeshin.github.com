@@ -52,7 +52,7 @@ a:hover {
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 110%;
+    font-size: 120%;
 }
 .menu .icon {display: none;}
 
@@ -81,7 +81,7 @@ a:hover {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 189%;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -218,13 +218,13 @@ i {
     padding-top: 8%;
 }
 #righttext h4 {
-    font-size: 105%;
+    font-size: 150%;
     font-weight: 700;
     margin-top: 0;
     margin-right: 0;
 }
 #righttext p {
-    font-size: 84%;
+    font-size: 120%;
     margin-bottom: 10%;
     padding-right: 8%;
     margin-right: 0;
@@ -232,6 +232,7 @@ i {
 #righttext a {
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 120%;
 }
 #righttext a:hover {
     text-decoration:underline;
@@ -252,35 +253,28 @@ i {
 }
 /*Foods-ContentBox*/
 .cbox1 {
-    width: 15%;
+    width: 19.5%;
     background-color: #CDC2AE;
     border-radius: 5px;
     margin-left: 3%;
     margin-top: 3%;
 }
 .cbox2 {
-    width: 15%;
+    width: 19.5%;
     background-color: #CDC2AE;
     border-radius: 5px;
     margin-left: 3%;
     margin-top: 3%;
 }
 .cbox3 {
-    width: 15%;
+    width: 19.5%;
     background-color: #CDC2AE;
     border-radius: 5px;
     margin-left: 3%;
     margin-top: 3%;
 }
 .cbox4 {
-    width: 15%;
-    background-color: #CDC2AE;
-    border-radius: 5px;
-    margin-left: 3%;
-    margin-top: 3%;
-}
-.cbox5 {
-    width: 15%;
+    width: 19.5%;
     background-color: #CDC2AE;
     border-radius: 5px;
     margin-left: 3%;
@@ -292,13 +286,13 @@ i {
 }
 #fdcontent h5 {
     font-weight: 700;
-    font-size: 105%;
+    font-size: 120%;
     margin: 8%;
     margin-bottom: 5%;
 }
 #fdcontent p {
-    font-weight: 700;
-    font-size: 78%;
+    font-weight: 600;
+    font-size: 105%;
     margin: 8%;
     margin-top: 5%;
     padding-bottom: 5%;
@@ -394,11 +388,22 @@ i {
     #mptitle h1 {font-size: 400%;}
 
     /*Foods-ContentBox*/
-    .cbox1 {width: 27%;}
-    .cbox2 {width: 27%;}
-    .cbox3 {width: 27%;}
-    .cbox4 {width: 27%;}
-    .cbox5 {width: 27%;}
+    .cbox1 {
+        width: 27%;
+        margin-top: 5%;
+    }
+    .cbox2 {
+        width: 27%;
+        margin-top: 5%;
+    }
+    .cbox3 {
+        width: 27%;
+        margin-top: 5%;
+    }
+    .cbox4 {
+        width: 27%;
+        margin-top: 5%;
+    }
 
     /*Footer*/
     .fmenu .homeb {padding-right: 10px;}
@@ -412,6 +417,7 @@ i {
 
 /*Mobile screen size*/
 @media screen and (max-width:700px) {
+
     /*MainPage-Foods*/
     #mainpagefd {
         flex-direction: column;
@@ -432,7 +438,6 @@ i {
         font-size: 120%;
     }
     /*Header-Menu-DisplayOut*/
-    .overlay a {font-size: 20px}
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -468,11 +473,33 @@ i {
     #mpfdbigright {width: 100%;}
 
     /*Foods-ContentBox*/
-    .cbox1 {width: 42%;}
-    .cbox2 {width: 42%;}
-    .cbox3 {width: 42%;}
-    .cbox4 {width: 42%;}
-    .cbox5 {width: 42%;}
+    #fdcontent {justify-content: center;}
+    #fdcontent h5 {font-size: 150%;}
+    #fdcontent p {font-size: 120%;}
+    .cbox1 {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
+    .cbox2 {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
+    .cbox3 {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
+    .cbox4 {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
 
     /*Footer*/
     .fmenu {

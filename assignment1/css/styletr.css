@@ -45,7 +45,7 @@ a:hover {animation: .5s horizontal-shaking infinite alternate;}
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 110%;
+    font-size: 120%;
 }
 .menu .icon {display: none;}
 
@@ -74,7 +74,7 @@ a:hover {animation: .5s horizontal-shaking infinite alternate;}
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 189%;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -144,9 +144,15 @@ i {
 #trtext {
     width: 80%;
     margin: auto;
-    font-size: 180%;
     margin-top: 8%;
     margin-bottom: 8%;
+}
+#trtext h3{
+    font-size: 250%;
+}
+#trtext p{
+    font-size: 180%;
+    font-weight: 600;
 }
 
 
@@ -192,7 +198,7 @@ i {
     margin-left: 5%;
 }
 .slidecontent h3 {font-size: 157%;}
-.slidecontent p {font-size: 105%;}
+.slidecontent p {font-size: 120%;}
 /*Slider-Content-Right*/
 .scontentright {
     width: 40%;
@@ -395,7 +401,8 @@ i {
     }
 
     /*Trains-Texts*/
-    #trtext {font-size: 130%;}
+    #trtext h3{font-size: 180%;}
+    #trtext p{font-size: 130%;}
 
     /*Train-Slide-Content*/
     .slideb {width: 90%;}
@@ -449,9 +456,6 @@ i {
     }
 
     /*Header-Menu-DisplayOut*/
-    .overlay a {
-        font-size: 20px
-    }
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -472,13 +476,13 @@ i {
     /*Trains-Texts*/
     #trtext {
         text-align: center;
-        font-size: 105%;
-    }
+        margin-bottom: 20%;
+    }    
 
     /*Train-Slide-Content*/
-    .slidecontent h3 {font-size: 130%;}
-    .slidecontent p {font-size: 80%;}
-    .timeline li:after {font-size: 80%;}
+    .slidecontent h3 {font-size: 150%;}
+    .slidecontent p {font-size: 115%;}
+    .timeline li:after {font-size: 90%;}
 
     /*Footer*/
     .fmenu {
