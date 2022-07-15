@@ -445,7 +445,7 @@ a .btn:hover{
         margin-bottom: 5%;
     }
     .contentb #bbutton {display: none;}
-    #leftbox {width: 100%;}
+    #leftbox {width: 90%;}
     .picboxrow {
         flex-direction: row-reverse;
         width: 90%;
