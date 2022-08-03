@@ -138,7 +138,7 @@ body {
         background: rgb(0, 0, 0); /* Fallback color */
         background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
         color: #f1f1f1;
-        width: 100%;
+        width: 50%;
         height:50%;
         padding: 20px;
     }
@@ -149,7 +149,7 @@ body {
         background: rgb(0, 0, 0); /* Fallback color */
         background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
         color: #f1f1f1;
-        width: 100%;
+        width: 50%;
         height:50%;
         padding: 20px;
     }
@@ -157,12 +157,12 @@ body {
     .mfourcol .ttext {
         font-size: 200%;
         top:3%;
-        left:21%;
+        left:46%;
     }
     .mfourcol .ttext-1 {
         font-size: 180%;
         top:20%;
-        left:23%; 
+        left:43%; 
     }
     .mfourcol .ttext h1, .ttext-1 h1 {
         font-size: 200%;
