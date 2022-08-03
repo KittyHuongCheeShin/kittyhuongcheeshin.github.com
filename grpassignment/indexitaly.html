@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italy Desserts</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="css/styleitaly.css" rel="stylesheet" />
+
+    <!--Font Type-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asar&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Header-NavBar-->
+    <div class="container-fluid">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../indexipgress.html">
+                    <img src="image/logo.png" alt="Icon" width="50">
+                </a>
+        
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            
+                <div id="main">
+                    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Middle Content-->
+    <div class="container">
+        <div class="row py-5 justify-content-center">
+            <!--Side Bar-->
+            <div class="sidemenu col-md-1 me-5">
+                <div id="lex" class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action d-flex justify-content-center" href="#sec1"><img
+                            src="image/countryitaly/iconaffogato.png"></a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-center" href="#sec2"><img
+                            src="image/countryitaly/iconpanettone.png"></a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-center" href="#sec3"><img
+                            src="image/countryitaly/icontiramisu.png"></a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#lex" id="work" data-offset="20">
+
+                    <!--Content 1-->
+                    <div class="content row my-5" id="sec1">
+                        <!--Left Content Chef Details-->
+                        <div class="col-md-7 px-5">
+                            <div class="d-flex title">
+                                <img src="image/countryitaly/iconitalyflag.png">
+                                <h2 class="ps-4">Affogato</h2>
+                            </div>
+                            <div class="details">
+                                <p>Affogato is symbolized as Italian’s classic. The word “affogato”
+                                    literally translates to “drowned” in Italian.<br><br>Its history is untraceable.
+                                    Estimated that Affogato emerged and started to spread in the late 1900s, soon after
+                                    the invention of espresso machine.</p>
+                                <a class="pt-5 cssanimation coolVerticalShake" href="../indexipgress.html">See More
+                                    &emsp;
+                                    &#8594</a>
+                            </div>
+                            <div class="text1">
+                                <img src="image/countryitaly/AffogatoD.png">
+                            </div>
+                        </div>
+                        <!--Right Big Picture-->
+                        <div class="col-md-5 ps-5 big1">
+                            <img src="image/countryitaly/affogatobig.png">
+                            <a class="pt-4 cssanimation coolVerticalShake" href="../indexipgress.html">See More &emsp;
+                                &#8594</a>
+                        </div>
+                    </div>
+
+                    <!--Content 2-->
+                    <div class="content row my-5 py-5" id="sec2">
+                        <!--Left Content Chef Details-->
+                        <div class="col-md-7 px-5">
+                            <div class="d-flex title">
+                                <img src="image/countryitaly/iconitalyflag.png">
+                                <h2 class="ps-4">Panettone</h2>
+                            </div>
+                            <div class="details">
+                                <div class="chef d-flex mt-3">
+                                    <div class="chefimage1 d-flex justify-content-center">
+                                        <img src="image/countryitaly/chef2.jpg">
+                                    </div>
+                                    <div class="cheftext d-flex justify-content-center flex-column">
+                                        <h4 class="pb-4">Angelo Motta</h4>
+                                        <p>An Italian entrepreneur, founder of the food company Motta. He is associated
+                                            with the commercial production of the sweet yeast bread panettone.</p>
+                                    </div>
+                                </div>
+
+                                <a class="pt-5 cssanimation coolVerticalShake" href="../indexipgress.html">See More
+                                    &emsp;
+                                    &#8594</a>
+                            </div>
+                            <div class="text1">
+                                <img src="image/countryitaly/PanettoneD.png">
+                            </div>
+                        </div>
+                        <!--Right Big Picture-->
+                        <div class="col-md-5 mt-5 ps-5 big1">
+                            <img src="image/countryitaly/panettonebig.png">
+                            <a class="pt-4 cssanimation coolVerticalShake" href="../indexipgress.html">See More &emsp;
+                                &#8594</a>
+                        </div>
+                    </div>
+
+                    <!--Content 3-->
+                    <div class="content row my-5 pt-5" id="sec3">
+                        <!--Left Content Chef Details-->
+                        <div class="col-md-7 px-5">
+                            <div class="d-flex title">
+                                <img src="image/countryitaly/iconitalyflag.png">
+                                <h2 class="ps-4">Tiramisu</h2>
+                            </div>
+                            <div class="details">
+                                <div class="chef d-flex mt-3">
+                                    <div class="chefimage d-flex justify-content-center">
+                                        <img src="image/countryitaly/chef3.jpg">
+                                    </div>
+                                    <div class="cheftext d-flex justify-content-center flex-column">
+                                        <h4 class="pb-4">Alba di Pillo</h4>
+                                        <p>CampeolInvented at restaurant Le Beccherie in Treviso (Restaurateur Ado
+                                            Campeol）on 24 December 1969 with pastery chef Roberto Linguanotto.</p>
+                                    </div>
+                                </div>
+                                <a class="pt-5 cssanimation coolVerticalShake" href="../indexipgress.html">See More
+                                    &emsp;
+                                    &#8594</a>
+                            </div>
+                            <div class="text1">
+                                <img src="image/countryitaly/TiramisuD.png">
+                            </div>
+                        </div>
+                        <!--Right Big Picture-->
+                        <div class="col-md-5 mt-5 ps-5 big1">
+                            <img src="image/countryitaly/tiramisubig.png">
+                            <a class="pt-4 cssanimation coolVerticalShake" href="../indexipgress.html">See More &emsp;
+                                &#8594</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer container-fluid text-white">
+        <div class="flogo d-flex justify-content-center">
+            <img src="image/logo.png">
+        </div>
+        <div class="row container py-5 d-flex justify-content-between">
+            <div class="design col-md-3 d-flex flex-column align-items-center">
+                <h4>Designer</h4>
+                <a href="https://tehsiawtian.github.io/">Teh Siaw Tian</a>
+                <a href="https://kittyhuongcheeshin.github.io/">Kitty Huong Chee Shin</a>
+                <a href="https://limjiayuan.github.io/">Lim Jia Yuan</a>
+                <a href="https://tanyunwen.github.io/">Tan Yun Wen</a>
+            </div>
+            <div class="col-md-9">
+                <div class="row d-flex">
+                    <div class="japan col-md d-flex flex-column align-items-center">
+                        <a href="#"><h4>Japan</h4></a>
+                        <a href="#">Wagashi</a>
+                        <a href="#">Anmitsu</a>
+                        <a href="#">Mochi</a>
+                    </div>
+                    <div class="france col-md d-flex flex-column align-items-center">
+                        <a href="#"><h4>France</h4></a>
+                        <a href="#">Mousse</a>
+                        <a href="#">Napoleon</a>
+                        <a href="#">Paris-Brest</a>
+                    </div>
+                    <div class="italy col-md d-flex flex-column align-items-center">
+                        <a href="indexitaly.html"><h4>Italy</h4></a>
+                        <a href="#">Affogato</a>
+                        <a href="#">Panettone</a>
+                        <a href="#">Tiramisu</a>
+                    </div>
+                    <div class="china col-md d-flex flex-column align-items-center">
+                        <a href="#"><h4>China</h4></a>
+                        <a href="#">Dragon Beard Candy</a>
+                        <a href="#">Sugar-Coated Haws</a>
+                        <a href="#">Yang Zhi Gan Lu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy pt-5 d-flex justify-content-center">
+                <h6>&copy;copyright by bonjour team</h6>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("main").style.marginLeft = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        $(function () {
+            $('#work').on('activate.bs.scrollspy')
+        });
+    </script>
+</body>
+
+</html>

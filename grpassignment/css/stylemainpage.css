@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Oleo Script', cursive;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    left: 45%;
+    top: 8%;
+    width: 30%;
+}
+.logo img {
+    width: 28%;
+}
+
+.mobile .logo {
+    position: absolute;
+    left: 40%;
+    top: 44%;
+    width: 30%;
+}
+.mobile .logo img {
+    width: 60%;
+}
+
+.fourcol {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.country {
+    padding: 0;
+}
+.overlayimg-container {
+    position: relative;
+    width: 25%;
+    background: rgb(0, 0, 0);
+
+}
+  
+.image {
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.overlayimg-container:hover .image {
+    opacity: 0.8;
+}
+  
+.overlayimg-container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 630%;
+}
+.mobile {
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:1024px) {
+    .text {
+        font-size: 400%;
+    }
+}
+
+@media screen and (min-width:701px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .fourcol {
+        display: none;
+    }
+
+    .mfourcol .text {
+        color: white;
+        font-size: 200%;
+    }
+    .mfourcol .text h1 {
+        font-size: 250%;
+    }
+
+    .mfourcol {
+        width: 100%;
+        margin: 0;
+    }
+    .mfourcol .overlayimg-container {
+        width: 50%;
+    }
+
+
+}
