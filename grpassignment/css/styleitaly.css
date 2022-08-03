@@ -4,12 +4,141 @@ body {
     font-family: 'Asar', serif;
 }
 
+/*Logo*/
+svg { width: 50%; }
+rect { fill: #FE0304; }
+text { 
+  font-size: 40px;
+	font-weight: 100; 
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	fill: rgb(244, 173, 41);
+}
+
+/*Header-Menu*/
+.sidenav {
+    height: 200%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 198%;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,.sidenav a.active {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navb {
+    display: flex;
+}
+
+.image-col {
+    display: flex;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.dessert {
+    width: 40%;
+}
+.image {
+    width: 40%;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#j-img {
+    display: none;
+    background-color: #FFE5F8;
+}
+#j-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#f-img {
+    display: none;
+    background-color: rgba(9, 8, 8, 0.44);
+}
+#f-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#i-img {
+    display: none;
+    background-color: #ECD2C0;
+}
+#i-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#c-img {
+    display: none;
+    background-color: #A91B2A;
+}
+#c-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#j-dessert a{
+    font-size: 176%;
+}
+#f-dessert a{
+    font-size: 176%;
+}
+#i-dessert a{
+    font-size: 176%;
+}
+#c-dessert a{
+    font-size: 176%;
+}
+
+
+
 
 /*Middle Content*/
 
 /*SideBar*/
 .sidemenu img{
     width: 100%;
+}
+.sidemenu {
+    z-index: 10;
 }
 /*Left-Content*/
 .title {
@@ -57,32 +186,65 @@ p {
     width: 110%;
 }
 
+/*Footer*/
 .footer {
     background-color: #4C4751;
     position: relative;
     padding-top: 5%;
 }
-.footer img{
-    position: absolute;
-    bottom: 85%;
-    width: 8%;
-}
+
 .footer .design {
     padding-left:10%;
 }
 .footer a {
+    background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+
+.footer a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+.underline {
+    padding-bottom: 2px;
+    --bg-h: 2px !important;
+}
+
+.f-title-font h4{
+    font-size: 150%;
+}
+
+.footer a {
     text-decoration: none;
-    color: white;
+    color: inherit;
+    line-height: 1;
+    font-size: 108% !important;
+    line-height: 155%;
 }
-.footer a:hover {
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    display: inline-block;
-    animation-name: coolVerticalShake; 
-    animation-iteration-count: infinite;
+
+/*Footer-Logo*/
+.footer svg { width: 100%; }
+rect { fill: #FE0304; }
+text { 
+  font-size: 40px;
+	font-weight: 100; 
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	fill: rgb(244, 173, 41);
 }
-.footer .copy {
-    margin-left: 5%;
+.footer .flogo{
+    position: absolute;
+    bottom: 65%;
+    width: 90%;
+    left: 5%;
+}
+.footer .noHover a{
+    background: linear-gradient(0deg, 0deg, 0deg) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
 }
 
 /*Button-Animation*/
@@ -93,6 +255,15 @@ p {
 }
 
 .coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
+
+.f-p {
+    padding-left: 9% !important;
+    padding-right: 2% !important;
+}
+
+.f-p-end {
+    padding-right: 8% !important;
+}
 
  @keyframes coolVerticalShake {
       3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
@@ -122,6 +293,7 @@ p {
     .cheftext {
         padding-left: 20%;
     }
+
 
 }
 
@@ -224,97 +396,26 @@ p {
         padding-top: 5%;
         padding-bottom: 5%;
     }
-    .footer .copy {
-        margin-left: 0;
+
+    .f-p {
+        text-align: center;
+        padding-left: 0 !important;
+        padding-top: 15%;
     }
-}
+    .f-m-change {
+        text-align: center;
+        padding-left: 24% !important;
+        padding-right: 24% !important;
+    }
+    .f-m-space {
+        margin-top: 2%;
+    }
 
-.sidenav {
-  height: 200%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    /*Footer-Logo*/
+    .footer .flogo{
+        bottom: 88%;
+        left: 10%;
+    }
+    .footer svg { width: 85%; }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-
-#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
-
-#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold; }
-
-#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
-
-  -webkit-animation-name: rotate;
-     -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-       -o-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 5s;
-     -moz-animation-duration: 5s;
-      -ms-animation-duration: 5s;
-       -o-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-       -o-animation-timing-function: linear;
-          animation-timing-function: linear;
-
-}
-
-@-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
-}
-@-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
-}
-@-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
-}
-@-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
-}
-@keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
 }
