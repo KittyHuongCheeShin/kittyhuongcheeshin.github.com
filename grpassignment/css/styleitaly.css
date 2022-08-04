@@ -19,7 +19,7 @@ text {
 .sidenav {
     height: 200%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 11;
     top: 0;
     left: 0;
@@ -132,6 +132,19 @@ text {
 
 
 /*Middle Content*/
+
+.list-group{
+    --bs-list-group-active-bg:none;
+    --bs-list-group-active-border-color:none;
+    --bs-list-group-border-color:black;
+    --bs-list-group-bg:none;
+    --bs-list-group-active-color:none;
+    --bs-list-group-disabled-bg:none;
+}
+
+.list-group a:hover {
+    background-color:rgb(196, 157, 125);
+}
 
 /*SideBar*/
 .sidemenu img{
@@ -248,13 +261,11 @@ text {
 }
 
 /*Button-Animation*/
-.cssanimation {
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    display: inline-block;
-}
+.wrapper {
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
 
-.coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
+}
 
 .f-p {
     padding-left: 9% !important;
@@ -265,10 +276,16 @@ text {
     padding-right: 8% !important;
 }
 
- @keyframes coolVerticalShake {
-      3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
-      6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) }
-      9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) }
+@keyframes slide1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 0);
+    }
 }
 
 /*Responsive-Laptop*/
@@ -380,6 +397,7 @@ text {
     /*Right-BigImage*/
     .big1 img {
         width: 70%;
+        margin-left: 12%;
     }
 
     /*Footer*/
