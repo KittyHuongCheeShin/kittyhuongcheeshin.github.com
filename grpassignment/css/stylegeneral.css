@@ -3,6 +3,14 @@ body {
 }
 
 /*Header*/
+.h-top {
+    position: fixed;
+    height: 65px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+}
 .sidenav {
     height: 200%;
     width: 0;
@@ -74,6 +82,7 @@ text {
     font-size: 200%;
     transition: margin-left .5s;
     padding: 16px;
+    padding-top: 50px;
 }
 #main span {
     position: static;
@@ -123,25 +132,25 @@ text {
     font-size: 176%;
 }
 #j-dessert a:hover{
-    color: pink;
+    color: pink !important;
 }
 #f-dessert a{
     font-size: 176%;
 }
 #f-dessert a:hover{
-    color: rgb(212, 113, 77);
+    color: rgb(212, 113, 77) !important;
 }
 #i-dessert a{
     font-size: 176%;
 }
 #i-dessert a:hover{
-    color: beige;
+    color: beige !important;
 }
 #c-dessert a{
     font-size: 176%;
 }
 #c-dessert a:hover{
-    color:#FE0304;
+    color:#FE0304 !important;
 }
 
 span {
