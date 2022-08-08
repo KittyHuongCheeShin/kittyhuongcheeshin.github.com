@@ -97,6 +97,14 @@ p {
 }
 .accordion-body {
     padding-left: 5% !important;
+    font-size: 140%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+.accordion-body img {
+    width: 20%;
+    margin-top: 3%;
 }
 .accordion {
     --bs-accordion-bg: #e6cec1 !important;
