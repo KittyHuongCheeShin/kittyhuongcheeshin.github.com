@@ -10,38 +10,89 @@ body {
 
 /*Middle Content*/
 .intro {
-    margin-top: 7%;
-}
-.list-group{
-    --bs-list-group-active-bg:none;
-    --bs-list-group-active-border-color:none;
-    --bs-list-group-border-color:black;
-    --bs-list-group-bg:none;
-    --bs-list-group-active-color:none;
-    --bs-list-group-disabled-bg:none;
+    margin-top: 5%;
 }
 
-.list-group a:hover {
-    background-color:rgb(196, 157, 125);
-}
 
 /*SideBar*/
-.sidemenu img{
-    width: 100%;
+.sidemenu a{
+    text-decoration: none;
+    font-size: 110% !important;
+    color: rgb(133, 107, 85);
+}
+.sidemenu a:hover{
+    text-decoration: none;
+    font-size: 110% !important;
+    color: rgb(133, 107, 85);
+}
+
+ul {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+ul::before {
+    height: 133%;
+    width: 133%;
+    display: block;
+    position: absolute;
+    top: -18%;
+    left: 10px;
+}
+
+li {
+    margin: 18px 0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+li::before {
+    height: 20px;
+    width: 20px;
+    content: "";
+    display: inline-block;
+    background-color: rgb(146, 119, 96);
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+}
+
+li span {
+    position: relative;
+    left: -100%;
+    transition: left 300ms ease-in;
+}
+
+li:hover span {
+    left: 0;
 }
 .sidemenu {
+    margin-top: 8%;
     z-index: 9;
+    position: fixed;
+    width: 85%;
+    display: flex;
+    justify-content: start;
+
 }
 /*Left-Content*/
+.bigbox {
+    margin-left: 5%;
+}
 .title {
-    background-image: url(../image/countryitaly/line.png);
+    background-image: url(../image/countryitaly/i_line.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 50%;
     padding-bottom: 10%;
 }
 .title img {
-    width: 10%;
+    width: 12%;
 }
 h2 {
     font-size: 240%;
@@ -50,11 +101,19 @@ p {
     font-size: 120%;
 }
 .chefimage1 img {
-    width: 150%;
-    margin-right: 40%;
+    width: 140%;
+    justify-content: start;
+}
+.chefimage img {
+    width: 380%;
+    height: 70%;
+    justify-content: start;
 }
 .cheftext {
-    padding-left: 10%;
+    padding-left: 15%;
+}
+.cheftext-1 {
+    padding-left: 24%;
 }
 /*Button-SeeMore*/
 .details a {
@@ -77,6 +136,11 @@ p {
 .big1 img {
     width: 110%;
 }
+.big1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
@@ -84,23 +148,36 @@ p {
 @media screen and (min-width:991px) and (max-width:1199px) {
 
     /*Middle Content*/
-
+    .intro {
+        margin-top: 8%;
+    }
     /*SideBar*/
-    .sidemenu img{
-        width: 200%;
+    .sidemenu {
+        margin-top: 10%;
     }
     /*Left-Content*/
+    .bigbox {
+        margin-left: 8%;
+    }
     .title {
         background-size: 70%;
     }
+    .title img {
+        width:15%;
+    }
     .chefimage1 img {
-        width: 200%;
+        width: 220%;
+        height: 60%;
     }
     .chefimage img {
-        width: 380%;
+        width: 400%;
+        height: 50%;
     }
     .cheftext {
-        padding-left: 20%;
+        padding-left: 28%;
+    }
+    .cheftext-1 {
+        padding-left: 35%;
     }
 
 
@@ -112,16 +189,26 @@ p {
     /*Middle Content*/
 
     /*SideBar*/
-    .sidemenu img{
-        width: 1800%;
+    .sidemenu {
+        margin-top: 15%;
     }
     /*Left-Content*/
+    .bigbox {
+        margin-left: 10%;
+    }
     .title {
-        background-size: 90%;
+        background-size: 110%;
+        background-position: bottom;
         padding-bottom: 13%;
+    }
+    .title img {
+        width: 23%;
     }
     .chef {
         flex-direction: column;
+    }
+    .chefimage, .chefimage1 {
+        justify-content: center;
     }
     .chefimage1 img {
         width: 60%;
@@ -130,8 +217,12 @@ p {
     .chefimage img {
         width: 65%;
     }
-    .cheftext {
+    .cheftext, .cheftext-1{
         margin-top: 10%;
+    }
+    /*Right-BigImage*/
+    .big1 img {
+        width: 178%;
     }
 }
 
@@ -150,7 +241,7 @@ p {
         margin-top: 22%;
     }
     /*SideBar*/
-    .sidemenu {
+    .intro .sidemenu {
         display: none;
     }
     /*Left-Content*/
@@ -170,15 +261,19 @@ p {
     .chef {
         flex-direction: column;
     }
+    .chefimage, .chefimage1 {
+        justify-content: center;
+    }
     .chefimage1 img {
         width: 45%;
         margin-right: 0;
     }
     .chefimage img {
-        width: 50%;
+        width: 43%;
     }
-    .cheftext {
+    .cheftext, .cheftext-1 {
         margin-top: 10%;
+        padding-left: 0;
     }
     /*Button-SeeMore*/
     .details a {
