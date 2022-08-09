@@ -149,10 +149,16 @@ p {
 /*SlideShow*/
 .dslide {
     margin-top: 5%;
-    border: #a19188;
-    border-style: solid;
-    border-width: 5px;
-    height: 200px;
+    width: 100%;
+}
+
+.dslide .carousel-item.active {
+    display:flex !important;
+    width: 100%;
+}
+.dslide img{
+    display: flex;
+    width: 25%;
 }
 
 
@@ -352,6 +358,11 @@ p {
         margin-top: 7%;
     }
 
+    /*Image-Slider*/
+    .dslide img{
+        width: 33.33%;
+    }
+
     /*Restaurant-Card*/
     .restau {
         margin-bottom: 18%;
@@ -436,6 +447,11 @@ p {
     .receipe p {
         padding: 5%;
         padding-left: 10%;
+    }
+
+    /*Image-Slider*/
+    .dslide img{
+        width: 50%;
     }
 
     /*Restaurant-Card*/
