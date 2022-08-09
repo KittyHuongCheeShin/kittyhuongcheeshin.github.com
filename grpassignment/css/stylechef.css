@@ -61,6 +61,9 @@ li {
     width: 50%;
     margin-top: 5%;
 }
+.tchef .img5 {
+    padding-left: 3%;
+}
 
 /*Japan*/
 .japanbig {
@@ -147,10 +150,6 @@ li {
 
 .china {
     padding-left: 6% !important;
-}
-
-.tchef .china .img5 {
-    padding-left: 3%;
 }
 
 .china .modal-header,
