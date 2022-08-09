@@ -75,7 +75,8 @@ li:hover span {
     margin-top: 8%;
     z-index: 9;
     position: fixed;
-    width: 85%;
+    width: 20%;
+    left: 5%;
     display: flex;
     justify-content: start;
 
