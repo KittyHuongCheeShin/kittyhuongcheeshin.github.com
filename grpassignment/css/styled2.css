@@ -72,6 +72,11 @@ p {
     font-style: italic;
     padding-left: 3%;
 }
+.receipe h3 {
+    font-size: 200%;
+    font-weight: 600;
+    font-style: italic;
+}
 
 /*Ingredient-Top*/
 .ingretop {
@@ -81,7 +86,8 @@ p {
 }
 
 .ingretop img {
-    width: 30%;
+    width: 40%;
+    height: 30%;
 }
 
 .ingrec {
@@ -90,7 +96,7 @@ p {
 }
 
 .ingretop .title img {
-    width: 25%;
+    width: 15%;
 }
 
 .ingretop ul li {
@@ -108,6 +114,18 @@ p {
 .ingrebottom .title img {
     width: 10%;
 }
+.ingrebottom .fruittitle img {
+    width: 6%;
+    margin-left: 2%;
+}
+.doughtitle, .panetitle {
+    margin-top: 5%;
+}
+.ingrebottom .doughtitle img, .ingrebottom .panetitle img {
+    width: 5%;
+    margin-left: 2%;
+}
+
 
 .ingrebottom .title h2 {
     padding-left: 0;
@@ -132,7 +150,7 @@ p {
 }
 
 .accordion-body img {
-    width: 20%;
+    width: 30%;
     margin-top: 2%;
 }
 
@@ -187,6 +205,7 @@ p {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    align-items: center;
 }
 .resimg {
     width: 60%;
@@ -220,7 +239,7 @@ p {
     text-decoration: none;
     color: #000000;
 }
-.resloc, .restime, .restel, .resfb, .resweb {
+.resloc, .restime, .restel, .resweb {
     margin-top: 2%;
     width: 100%;
 }
@@ -235,10 +254,6 @@ p {
 .restel img {
     width: 10%;
     margin-right: 2%;
-}
-.resfb img {
-    width: 7%;
-    margin-right: 5%;
 }
 .resweb img {
     width: 9%;
@@ -280,9 +295,15 @@ p {
 /*Responsive-Laptop*/
 @media screen and (min-width:991px) and (max-width:1199px) {
 
+    /*Ingredient-Top*/
+    .ingretop img {
+        width: 50%;
+        height: 40%;
+    }
+
     /*Ingredient-Bottom*/
     .accordion-body img {
-        width: 30%;
+        width: 40%;
     }
 
     /*Restaurant-Card*/
@@ -335,23 +356,34 @@ p {
         background-size: 30%;
         padding-bottom: 8%;
     }
+    .receipe h3 {
+        font-size: 180%;
+    }
 
     /*Ingredient-Top*/
     .ingretop img {
-        width: 40%;
+        width: 55%;
     }
 
     .ingretop .title img {
-        width: 18%;
+        width: 25%;
     }
 
     /*Ingredient-Bottom*/
     .ingrebottom .title img {
         width: 15%;
     }
+    .ingrebottom .fruittitle img {
+        width: 10%;
+        margin-left: 2%;
+    }
+    .ingrebottom .doughtitle img, .ingrebottom .panetitle img {
+        width: 9%;
+        margin-left: 2%;
+    }
 
     .accordion-body img {
-        width: 40%;
+        width: 60%;
     }
 
     .receipe p {
@@ -412,9 +444,11 @@ p {
     /*Receipe*/
     .receipe {
         background-size: 45%;
-        padding-bottom: 8%;
+        padding-bottom: 20%;
     }
-
+    .receipe h3 {
+        font-size: 180%;
+    }
     /*Ingredient-Top*/
     .ingretop {
         display: flex;
@@ -428,7 +462,7 @@ p {
     }
 
     .ingretop img {
-        width: 60%;
+        width: 70%;
     }
 
     .ingretop .title img {
@@ -439,9 +473,16 @@ p {
     .ingrebottom .title img {
         width: 20%;
     }
-
+    .ingrebottom .fruittitle img {
+        width: 15%;
+        margin-left: 2%;
+    }
+    .ingrebottom .doughtitle img, .ingrebottom .panetitle img {
+        width: 13%;
+        margin-left: 2%;
+    }
     .accordion-body img {
-        width: 60%;
+        width: 70%;
     }
 
     .receipe p {
