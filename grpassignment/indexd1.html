@@ -22,8 +22,8 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    
-        
+
+
     <!--Header-NavBar-->
     <div class="container-fluid">
         <nav class="navbar">
@@ -183,8 +183,8 @@
     </div>
 
     <!--Recipe-->
-    <div class="container-fuild">
-        <div class="container receipe">
+    <div class="container-fuild receipe">
+        <div class="container">
             <div class="ingretop">
                 <img src="image/desc/affogato/i_affogato.jpeg">
                 <div class="ingrec">
@@ -205,62 +205,131 @@
                 </div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Step 1
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Chill the dessert glass or mug , make sure the gelato or ice cream is very cold.
-                            <img src="image/desc/affogato/i_step1.jpg">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Step 1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Chill the dessert glass or mug , make sure the gelato or ice cream is very cold.
+                                <img src="image/desc/affogato/i_step1.jpg">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Step 2
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Add scoops of gelato to a dessert glass.
-                            <img src="image/desc/affogato/i_step2.jpg">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Step 2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Add scoops of gelato to a dessert glass.
+                                <img src="image/desc/affogato/i_step2.jpg">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Step 3
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Step 3
+                            </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                              Brew the espresso just before serving.
-                              <img src="image/desc/affogato/i_step3.png">
-                          </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Brew the espresso just before serving.
+                                <img src="image/desc/affogato/i_step3.png">
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Step 4
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Step 4
+                            </button>
                         </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                              Pouring espresso to make an affogato coffee dessert.
-                              <img src="image/desc/affogato/i_step4.jpg">
-                          </div>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Pouring espresso to make an affogato coffee dessert.
+                                <img src="image/desc/affogato/i_step4.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p>** Garnish is optional, but try adding sliced almonds or other nuts, chocolate curls, or a shot of a
+                    liqueur, like Frangelico, Amaretto, or other favourite coffee liqueur.</p>
             </div>
         </div>
     </div>
+
     <!--SlideShow-->
+    <div class="container-fluid dslide">
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#imageCarousel" data-slide-to="1"></li>
+              <li data-target="#imageCarousel" data-slide-to="2"></li>
+            </ol>
+           <div class="carousel-inner">
+             <div class="item active">
+               <div class="row">
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s0.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s1.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s2.jpg" class="img-responsive" />
+                 </div>
+               </div>
+             </div>
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s3.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s4.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s5.jpg" class="img-responsive" />
+                 </div>
+               </div>
+             </div>
+             <div class="item">
+               <div class="row">
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s6.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s7.jpg" class="img-responsive" />
+                 </div>
+                 <div class="col-md-4">
+                   <img src="image/desc/i_s9.jpgg" class="img-responsive" />
+                 </div>
+               </div>
+             </div>
+            </div>
+            <a class="left carousel-control" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#imageCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+           </div>
+
     <!--Restaurant-->
 
 
