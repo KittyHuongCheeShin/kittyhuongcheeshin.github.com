@@ -139,9 +139,10 @@ p {
     font-weight: 500 !important;
     font-size: 70% !important;
 }
-
+.accordion-item h2 {
+    padding-left: 0 !important;
+}
 .accordion-body {
-    padding-left: 5% !important;
     font-size: 140%;
     font-weight: 500;
     display: flex;
@@ -175,8 +176,8 @@ p {
     width: 100%;
 }
 .dslide img{
-    display: flex;
-    width: 25%;
+    object-fit: cover;
+    width: 24.75%;
 }
 
 

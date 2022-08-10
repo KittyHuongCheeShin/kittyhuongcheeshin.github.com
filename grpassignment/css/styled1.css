@@ -6,10 +6,12 @@ body {
 }
 
 p {
-    font-size: 140%;
+    font-size: 120%;
     font-weight: 500;
 }
-
+.h-top .navbar-brand .stop {
+    display: none;
+}
 .story,
 .receipe,
 .dslide,
@@ -121,9 +123,10 @@ p {
     font-weight: 500 !important;
     font-size: 70% !important;
 }
-
+.accordion-item h2 {
+    padding-left: 0 !important;
+}
 .accordion-body {
-    padding-left: 5% !important;
     font-size: 140%;
     font-weight: 500;
     display: flex;
@@ -132,7 +135,7 @@ p {
 }
 
 .accordion-body img {
-    width: 20%;
+    width: 25%;
     margin-top: 2%;
 }
 
@@ -151,14 +154,13 @@ p {
     margin-top: 5%;
     width: 100%;
 }
-
 .dslide .carousel-item.active {
     display:flex !important;
     width: 100%;
 }
 .dslide img{
-    display: flex;
-    width: 25%;
+    object-fit: cover;
+    width: 24.75%;
 }
 
 
@@ -358,10 +360,7 @@ p {
         margin-top: 7%;
     }
 
-    /*Image-Slider*/
-    .dslide img{
-        width: 33.33%;
-    }
+
 
     /*Restaurant-Card*/
     .restau {
@@ -451,12 +450,9 @@ p {
 
     /*Image-Slider*/
     .dslide {
-        margin-top: 12%;
-        margin-bottom: 12%;
+        display: none;
     }
-    .dslide img{
-        width: 50%;
-    }
+
 
     /*Restaurant-Card*/
     .restau {
