@@ -272,7 +272,10 @@ p {
     bottom: 3%;
 }
 
-
+/*Footer*/
+.footer a {
+    padding-left: 0;
+}
 
 
 
