@@ -369,11 +369,6 @@ p {
         margin-top: 7%;
     }
 
-    /*Image-Slider*/
-    .dslide img{
-        width: 33.33%;
-    }
-
     /*Restaurant-Card*/
     .restau {
         margin-bottom: 18%;
@@ -463,11 +458,7 @@ p {
 
     /*Image-Slider*/
     .dslide {
-        margin-top: 12%;
-        margin-bottom: 12%;
-    }
-    .dslide img{
-        width: 50%;
+        display: none;
     }
 
     /*Restaurant-Card*/
