@@ -27,7 +27,12 @@
 
             <!--Menu-->
             <div class="menu">
-                <div id="mySidenav" class="sidenav" style="z-index: 11;">
+
+                <div id="main" class="d-flex align-items-start">
+                    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+
+                <div id="mySidenav" class="sidenav" >
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="navb">
                         <div class="image" id="home">
@@ -118,9 +123,6 @@
                     </div>
                 </div>
 
-                <div id="main" class="d-flex align-items-start">
-                    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-                </div>
             </div>
 
 
@@ -300,6 +302,7 @@
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("mySidenav").style.zIndex= "2";
         }
 
         function closeNav() {
