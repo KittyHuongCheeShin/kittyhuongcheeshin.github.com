@@ -1,0 +1,485 @@
+@import "../../stylegeneral.css";
+
+body {
+    margin: 0;
+    background-color: #FFE5F8;
+    font-family: 'Asar', serif;
+    color: #580101;
+}
+
+h1 {
+    font-size: 240%;
+    text-align: center;
+}
+
+p {
+    font-size: 120%;
+}
+
+li {
+    font-size: 120%;
+}
+
+#main {
+    padding-top: 6% !important;
+}
+
+
+/* cover photo */
+.cover {
+    background-image: url("../images/j_mochi3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 11%;
+}
+
+/* introduction */
+.intro {
+    width: 55%;
+    background-image: url("../images/j_line1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+/* recipe */
+.recipe {
+    margin-top: 3%;
+    width: 56%;
+}
+
+.ingredients {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ingre img {
+    width: 15%;
+}
+
+.ingreimg img {
+    width: 70%;
+    margin-left: 20%;
+}
+
+.steps h1 {
+    text-align: left;
+}
+
+.steps img {
+    width: 9%;
+}
+
+.accordionimg img {
+    width: 40%;
+}
+
+.accordion-button {
+    background-color: #c288b962 !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+
+.accordion {
+    --bs-accordion-color: #580101 !important;
+    --bs-accordion-bg: #c288b962 !important;
+    --bs-accordion-active-color: #580101d7 !important;
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-color: #580101 !important;
+}
+
+/* image slider */
+.imgslide {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.imgslide img {
+    width: 24.75%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* recommendation */
+.recom2 {
+    display: none;
+}
+
+.recom p {
+    margin-bottom: 0%;
+}
+
+.recom {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/j_line1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 3%;
+}
+
+.re1 {
+    display: flex;
+    background-color: #DBBEDA;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3%;
+}
+
+.reimg img {
+    width: 100%;
+}
+
+.redef img {
+    width: 30px;
+    margin-right: 5%;
+}
+
+.restaurant a {
+    text-decoration: none;
+    font-size: 120%;
+    color: #580101;
+}
+
+.restaurant a:hover {
+    color: rgb(193, 122, 36);
+}
+
+.re2 {
+    display: flex;
+    background-color: #DBBEDA;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3%;
+    margin-top: 5%;
+}
+
+.re3 {
+    display: flex;
+    background-color: #DBBEDA;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.station {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+}
+
+/* responsive screen */
+@media screen and (min-width:1024px) and (max-width:1288px) {
+    #main {
+        padding-top: 8% !important;
+    }
+
+    /* cover photo */
+    .cover {
+        margin-top: 16%;
+    }
+
+    /* image slider */
+    .imgslide img {
+        width: 24.5%;
+    }
+
+    /* recommendation */
+    .re3 {
+        margin-bottom: 25%;
+    }
+
+    .recom2 {
+        display: none;
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    #main {
+        padding-top: 8% !important;
+    }
+
+    /* cover photo */
+    .cover {
+        margin-top: 20%;
+    }
+
+    /* recipe */
+    .ingreimg img {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    /* image slider */
+    .imgslide img {
+        width: 24.4%;
+    }
+
+    /* recommendation */
+    .recom {
+        display: none;
+    }
+
+    .recom2 {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        background-image: url("../images/j_line1.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding-top: 3%;
+        margin-bottom: 20%;
+    }
+
+    .recom2 p {
+        margin-bottom: 0%;
+    }
+
+    .tre1 {
+        background-color: #DBBEDA;
+        padding: 6%;
+    }
+
+    .tre1 h4 {
+        text-align: center;
+        padding: 3%;
+    }
+
+    .treimg img {
+        width: 100%;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details .btn {
+        color: #580101;
+        background-color: #FFE5F8;
+        border: 2px solid;
+        padding: 10px 40px 10px 40px;
+        margin-bottom: 15%;
+    }
+
+    .btn a {
+        font-size: 120%;
+        text-decoration: none;
+    }
+
+    .btn a:hover {
+        background-color: #a539a1;
+        color: white;
+    }
+
+    .card{
+        --bs-card-bg: #FFE5F8 !important;
+    }
+
+    .card img {
+        width: 25px;
+        margin-right: 5%;
+    }
+
+    .card a {
+        text-decoration: none;
+        font-size: 120%;
+        color: #580101;
+    }
+
+    .card a:hover{
+        color: rgb(193, 122, 36);
+    }
+
+    .location2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .time2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .station2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .website2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0% !important;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:768px){
+    #main {
+        padding-top: 13% !important;
+    }
+
+    .intro{
+        width: 90%;
+    }
+
+    .recipe{
+        width: 90%;
+    }
+
+    /* cover photo */
+    .cover {
+        margin-top: 25%;
+    }
+
+    /* steps */
+    .steps{
+        margin-bottom: 10%;
+    }
+
+
+    /* image slider */
+    .imgslide{
+        display: none;
+    }
+
+    /* recommendation */
+    .recom {
+        display: none;
+    }
+
+    .recom2 {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        background-image: url("../images/j_line1.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding-top: 3%;
+        margin-bottom: 30%;
+    }
+
+    .recom2 p {
+        margin-bottom: 0%;
+    }
+
+    .tre1 {
+        background-color: #DBBEDA;
+        padding: 6%;
+    }
+
+    .tre1 h4 {
+        text-align: center;
+        padding: 3%;
+    }
+
+    .treimg img {
+        width: 100%;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details .btn {
+        color: #580101;
+        background-color: #FFE5F8;
+        border: 2px solid;
+        padding: 10px 40px 10px 40px;
+        margin-bottom: 15%;
+    }
+
+    .btn a {
+        font-size: 120%;
+        text-decoration: none;
+    }
+
+    .btn a:hover {
+        background-color: #a539a1;
+        color: white;
+    }
+
+    .card{
+        --bs-card-bg: #FFE5F8 !important;
+    }
+
+    .card img {
+        width: 25px;
+        margin-right: 5%;
+    }
+
+    .card a {
+        text-decoration: none;
+        font-size: 120%;
+        color: #580101;
+    }
+
+    .card a:hover{
+        color: rgb(193, 122, 36);
+    }
+
+    .location2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .time2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .station2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .website2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0% !important;
+    }
+}
