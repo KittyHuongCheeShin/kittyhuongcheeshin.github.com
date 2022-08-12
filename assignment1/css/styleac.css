@@ -507,7 +507,10 @@ a .btn:hover{
         width: 100%;
         padding-right: 0;
     }
-    #bmainleft h1 {font-size: 300%;}
+    #bmainleft h1 {
+        font-size: 300%;
+        margin-left: 5%;
+    }
     #bmainright {width: 100%;}
 
     
