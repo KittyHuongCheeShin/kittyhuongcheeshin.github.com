@@ -4,7 +4,7 @@ body {
 
 /*Header*/
 .sidenav {
-    height: 200%;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -38,6 +38,7 @@ body {
 
 .navb {
     display: flex;
+    height: 100%;
 }
 
 .navbar svg {
@@ -54,6 +55,7 @@ text {
 
 .image-col {
     display: flex;
+    height: 50%;
 }
 
 .menu-link {
