@@ -1,492 +1,300 @@
-@import "stylegeneral.css";
+@import "../stylegeneral.css";
 
 body {
     margin: 0;
     background-color: #FFF8F4;
+    font-family: 'Asar', serif;
 }
 
-p {
-    font-size: 140%;
-    font-weight: 500;
-}
 
-.story,
-.receipe,
-.dslide,
-.restau {
-    font-family: 'Piazzolla', serif;
-}
 
-/*Story-Part*/
-.bigb {
+/*Middle Content*/
+.intro {
     margin-top: 5%;
-    background-image: url(../image/desc/i_frame-top.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 21%;
-}
-
-.story {
-    width: 100%;
-}
-
-.storyc {
-    padding: 5%;
-    padding-top: 0;
-}
-
-.storyimg img {
-    width: 45%;
-    border-radius: 25px;
-    margin-top: 6%;
-}
-
-.story .title {
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
-
-.story .title img {
-    width: 7%;
-}
-
-.story h2 {
-    font-size: 240%;
-    font-weight: 600;
-    font-style: italic;
 }
 
 
-/*Receipe-Part*/
-.receipe {
-    background-image: url(../image/desc/i_frame-bottom.png);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: 21%;
-    padding-bottom: 5%;
-}
-
-.receipe h2 {
-    font-size: 240%;
-    font-weight: 600;
-    font-style: italic;
-    padding-left: 3%;
-}
-
-/*Ingredient-Top*/
-.ingretop {
-    display: flex;
-    padding-left: 5%;
-    justify-content: space-around;
-}
-
-.ingretop img {
-    width: 40%;
-    height: 30%;
-}
-
-.ingrec {
-    margin-left: 5%;
-    margin-top: 3%;
-}
-
-.ingretop .title img {
-    width: 15%;
-}
-
-.ingretop ul li {
-    margin-top: 3%;
-    font-size: 140%;
-    font-weight: 500;
-}
-
-/*Ingredient-Bottom*/
-.ingrebottom {
-    padding-left: 5%;
-    margin-top: 2%;
-}
-
-.ingrebottom .title img {
-    width: 10%;
-}
-
-.ingrebottom .title h2 {
-    padding-left: 0;
-}
-
-/*Ingredient-Bottom-Accordion*/
-.accordion-button {
-    background-color: #CDB7AB !important;
-    border-radius: 5px !important;
-    box-shadow: none !important;
-    font-weight: 500 !important;
-    font-size: 70% !important;
-}
-.accordion-item h2 {
-    padding-left: 0 !important;
-}
-.accordion-body {
-    font-size: 140%;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1%;
-}
-
-.accordion-body img {
-    width: 30%;
-    margin-top: 2%;
-}
-
-.accordion {
-    --bs-accordion-bg: #e6cec1 !important;
-    --bs-accordion-active-color: #000000 !important;
-    --bs-accordion-active-bg: none !important;
-}
-
-.receipe p {
-    margin-top: 4%;
-}
-
-/*SlideShow*/
-.dslide {
-    margin-top: 5%;
-    width: 100%;
-}
-
-.dslide .carousel-item.active {
-    display:flex !important;
-    width: 100%;
-}
-.dslide img{
-    width: 24.75%;
-    object-fit: cover;
-}
-
-
-/*Restaurant*/
-.restau {
-    margin-top: 5%;
-    margin-bottom: 8%;
-}
-.restitle {
-    background-image: url(../image/countryitaly/i_line.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
-    
-}
-.restitle h2 {
-    font-size: 240%;
-    font-weight: 600;
-    font-style: italic;
-    padding-bottom: 15%;
-}
-/*Restaurant-Card*/
-.rescard {
-    background-color: rgba(205, 136, 86, 0.65);
-    padding:3%;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    align-items: center;
-}
-.resimg {
-    width: 60%;
-}
-.resimg img{
-    width: 80%;
-}
-.resname {
-    margin-bottom: 5%;
-}
-.resname img {
-    width: 15%;
-}
-.resname h4 {
-    font-weight: 500;
-    padding-left: 3%;
-    font-size: 180%;
-}
-/*Restaurant-Details*/
-.resdetails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.resdetails p, a {
-    font-weight: 500;
-    padding-left: 3%;
-    font-size: 140%;
-}
-.resdetails a, .resdetailscut a {
+/*SideBar*/
+.sidemenu a{
     text-decoration: none;
-    color: #000000;
+    font-size: 110% !important;
+    color: rgb(133, 107, 85);
 }
-.resloc, .restime, .restel, .resweb {
-    margin-top: 2%;
-    width: 100%;
+.sidemenu a:hover{
+    text-decoration: none;
+    font-size: 110% !important;
+    color: rgb(133, 107, 85);
 }
-.resloc img {
-    width: 8%;
-    margin-right: 3%;
+
+ul {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 }
-.restime img {
-    width: 8%;
-    margin-right: 4%;
+
+ul::before {
+    height: 133%;
+    width: 133%;
+    display: block;
+    position: absolute;
+    top: -18%;
+    left: 10px;
 }
-.restel img {
-    width: 10%;
-    margin-right: 2%;
+
+li {
+    margin: 18px 0;
+    font-weight: bold;
+    overflow: hidden;
 }
-.resweb img {
-    width: 9%;
-    margin-right: 4%;
+
+li::before {
+    height: 20px;
+    width: 20px;
+    content: "";
+    display: inline-block;
+    background-color: rgb(146, 119, 96);
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
 }
-/*Restaurant-Collapse Details*/
-.resdetailscut {
+
+li span {
+    position: relative;
+    left: -100%;
+    transition: left 300ms ease-in;
+}
+
+li:hover span {
+    left: 0;
+}
+.sidemenu {
+    margin-top: 13%;
+    z-index: 9;
+    position: fixed;
+    width: 20%;
+    left: 5%;
+    display: flex;
+    justify-content: start;
+
+}
+/*Left-Content*/
+.bigbox {
+    margin-left: 5%;
+}
+.title {
+    background-image: url("images/i_line.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 50%;
+    padding-bottom: 10%;
+}
+.title img {
+    width: 12%;
+}
+h2 {
+    font-size: 240%;
+}
+p {
+    font-size: 120%;
+}
+.chefimage1 img {
+    width: 150px;
+    justify-content: start;
+}
+.chefimage img {
+    width: 150px;
+    height: 70%;
+    justify-content: start;
+}
+.cheftext {
+    padding-left: 15%;
+}
+.cheftext-1 {
+    padding-left: 15%;
+}
+/*Button-SeeMore*/
+.details a {
+    display: flex;
+    justify-content: end;
+    font-size: 145%;
+    text-decoration: none;
+    color: black;
+}
+/*Text-Decorate*/
+.text1 img{
+    width: 125%;   
+}
+/*Right-BigImage*/
+.big1 a {
+    font-size: 145%;
+    text-decoration: none;
+    color: black;
+}
+.big1 img {
+    width: 110%;
+}
+.big1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-}
-.resdetailscut .resname {
     justify-content: center;
 }
-.btn-primary {
-    background-color: #FFEC87 !important;
-    color: #000000 !important;
-    border-color: #FFEC87 !important;
-    font-weight: 500 !important;
-    font-size: 105% !important;
-}
-.resdetailscut .resloc img {
-    width: 8%;
-    margin-right: 4%;
-}
-.resdetailscut .restime img {
-    width: 8%;
-    margin-right: 7%;
-}
-.resslide .carousel-indicators {
-    bottom: 3%;
-}
 
-/*Footer*/
-.footer a {
-    padding-left: 0;
+/*Responsive-Laptop*/
+@media screen and (min-width:1200px) and (max-width:1399px) {
+
+    .chefimage1 img {
+        height: 90%;
+    }
+    .chefimage img {
+        height: 68%;
+    }
+    .cheftext, .cheftext-1 {
+        padding-left: 8%;
+    }
 }
-
-
 
 /*Responsive-Laptop*/
 @media screen and (min-width:991px) and (max-width:1199px) {
 
-    /*Ingredient-Top*/
-    .ingretop img {
-        width: 50%;
-        height: 40%;
+    /*Middle Content*/
+    .intro {
+        margin-top: 8%;
     }
 
-    /*Ingredient-Bottom*/
-    .accordion-body img {
-        width: 40%;
+    /*Left-Content*/
+    .bigbox {
+        margin-left: 8%;
+    }
+    .title {
+        background-size: 70%;
+    }
+    .title img {
+        width:52px;
+        height: 2%;
+    }
+    .chefimage1 img {
+        height: 60%;
+    }
+    .chefimage img {
+        height: 45%;
+    }
+    .cheftext, .cheftext-1{
+        padding-left: 8%;
     }
 
-    /*Restaurant-Card*/
-    .resimg img{
-        width: 100%;
-    }
-    .resdetails {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .resname img {
-        width: 13%;
-    }
-}
 
-@media screen and (min-width:991px) {
-    .resslide {
-        display: none;
-    }
 }
 
 /*Responsive-Tablet*/
 @media screen and (min-width:768px) and (max-width:990px) {
 
-    /*Story-Part*/
-    .bigb {
-        margin-top: 10%;
-        background-size: 30%;
-    }
+    /*Middle Content*/
 
-    .storyimg img {
-        width: 65%;
-        margin-top: 10%;
+    /*SideBar*/
+    .sidemenu {
+        left: 8%;
+        margin-top: 20%;
     }
-
-    .storyc {
-        padding-top: 3%;
+    /*Left-Content*/
+    .bigbox {
+        margin-left: 10%;
     }
-
-    .story .title {
-        margin-bottom: 3%;
+    .title {
+        background-size: 110%;
+        background-position: bottom;
+        padding-bottom: 13%;
     }
-
-    .story .title img {
-        width: 10%;
+    .title img {
+        width: 50px;
+        height: 11%;
     }
-
-    /*Receipe*/
-    .receipe {
-        background-size: 30%;
-        padding-bottom: 8%;
-    }
-    .receipe h3 {
-        font-size: 180%;
-    }
-
-    /*Ingredient-Top*/
-    .ingretop img {
-        width: 55%;
-    }
-
-    .ingretop .title img {
-        width: 25%;
-    }
-
-    /*Ingredient-Bottom*/
-    .ingrebottom .title img {
-        width: 15%;
-    }
-
-    .accordion-body img {
-        width: 60%;
-    }
-
-    .receipe p {
-        margin-top: 7%;
-    }
-
-    /*Restaurant-Card*/
-    .restau {
-        margin-bottom: 18%;
-    }
-    .resslide .rescard {
+    .chef {
         flex-direction: column;
-        align-items: center;
     }
-    .resslide .resimg {
-        width: 80%;
+    .chefimage, .chefimage1 {
+        justify-content: center;
     }
-    .resslide .resimg img{
-        width: 100%;
+    .chefimage1 img {
+        width: 60%;
+        margin-right: 0;
     }
-    .normalcard {
-        display: none;
+    .chefimage img {
+        width: 65%;
     }
-
+    .cheftext, .cheftext-1{
+        margin-top: 10%;
+    }
+    /*Right-BigImage*/
+    .big1 img {
+        width: 178%;
+    }
 }
 
-@media screen and (max-width:767px) {
-
-    /*Story-Part*/
-    .bigb {
-        margin-top: 18%;
-        background-size: 45%;
-    }
-
-    .storyimg img {
-        width: 70%;
-        margin-top: 13%;
-    }
-
-    .storyc {
-        padding: 8%;
-        padding-top: 5%;
-    }
-
-    .story .title {
-        margin-bottom: 3%;
-    }
-
-    .story .title img {
-        width: 15%;
-    }
-
-    /*Receipe*/
-    .receipe {
-        background-size: 45%;
-        padding-bottom: 20%;
-    }
-    .receipe h3 {
-        font-size: 180%;
-    }
-    /*Ingredient-Top*/
-    .ingretop {
-        display: flex;
-        padding-left: 5%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ingrec {
-        padding-right: 8%;
-    }
-
-    .ingretop img {
-        width: 70%;
-    }
-
-    .ingretop .title img {
-        width: 20%;
-    }
-
-    /*Ingredient-Bottom*/
-    .ingrebottom .title img {
-        width: 20%;
-    }
-    .accordion-body img {
-        width: 70%;
-    }
-
-    .receipe p {
-        padding: 5%;
-        padding-left: 10%;
-    }
-
-    /*Image-Slider*/
-    .dslide {
+@media screen and (min-width:768px) {
+    /*Right-BigImage-Button*/
+    .big1 a {
         display: none;
     }
+}
 
-    /*Restaurant-Card*/
-    .restau {
-        margin-bottom: 23%;
+/*Responsive-Mobile*/
+@media screen and (max-width:768px) {
+
+    /*Middle Content*/
+    .intro {
+        margin-top: 22%;
     }
-    .resslide .rescard {
+    /*SideBar*/
+    .intro .sidemenu {
+        display: none;
+    }
+    /*Left-Content*/
+    .title {
+        background-size: 70%;
+        background-position: center bottom;
+        padding-bottom: 10%;
+        display:flex;
+        justify-content: center;
+    }
+    .title img {
+        width:48px;
+        height: 11%;
+    }
+    .content {
+        text-align: center;
+    }
+    .chef {
         flex-direction: column;
-        align-items: center;
     }
-    .resslide .resimg {
-        width: 90%;
+    .chefimage, .chefimage1 {
+        justify-content: center;
     }
-    .resslide .resimg img{
+    .chefimage1 img {
+        width: 45%;
+        margin-right: 0;
+    }
+    .chefimage img {
+        width: 52%;
+    }
+    .cheftext, .cheftext-1 {
+        margin-top: 10%;
+        padding-left: 0;
+    }
+    /*Button-SeeMore*/
+    .details a {
+        display: none;
+    }
+    /*Text-Decorate*/
+    .text1 img{
         width: 100%;
     }
-    .resslide .resname img {
-        width: 13%;
+    /*Right-BigImage*/
+    .big1 img {
+        width: 70%;
+        margin-left: 12%;
     }
-    .normalcard {
-        display: none;
-    }
-    .collapse {
-        margin-left: 1% !important;
-    }
-    .resslide .resdetailscut p, a {
-        font-weight: 500;
-        font-size: 105%;
-    }
-
 }
