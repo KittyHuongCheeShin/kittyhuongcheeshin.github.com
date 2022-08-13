@@ -17,6 +17,11 @@ p {
     font-family: 'Piazzolla', serif;
 }
 
+.story, .receipe, .restau {
+    width: 75% !important;
+    margin: auto;
+}
+
 
 /*Story-Part*/
 .bigb {
@@ -59,7 +64,7 @@ p {
 
 
 /*Receipe-Part*/
-.receipe {
+.receipebigbox {
     background-image: url("images/i_frame-bottom.png");
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -135,6 +140,7 @@ p {
     width: 30%;
     margin-top: 2%;
     margin-right: 5%;
+    object-fit: cover;
 }
 .accordion-body p {
     width: 45%;
@@ -313,7 +319,8 @@ p {
 }
 
 .pagebutton a:hover {
-    animation-name: vertical-shaking; animation-iteration-count: infinite;
+    animation-name: vertical-shaking; 
+    animation-iteration-count: infinite;
     animation-duration: 1s;
     display: inline-block;
     color: rgb(211, 6, 6);
@@ -391,7 +398,7 @@ p {
     }
 
     /*Receipe*/
-    .receipe {
+    .receipebigbox {
         background-size: 30%;
         padding-bottom: 8%;
     }
@@ -455,7 +462,12 @@ p {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
+
+    .story, .receipe, .restau {
+        width: 90% !important;
+    }
+    
 
     /*Story-Part*/
     .bigb {
@@ -482,7 +494,7 @@ p {
     }
 
     /*Receipe*/
-    .receipe {
+    .receipebigbox {
         background-size: 45%;
         padding-bottom: 8%;
     }
