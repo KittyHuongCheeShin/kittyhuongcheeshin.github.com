@@ -114,6 +114,7 @@ body {
     margin-bottom: 3%;
 }
 
+/*Chef_Modal*/
 .tchef h4 {
     font-size: 180%;
     font-weight: 500;
@@ -232,17 +233,34 @@ li {
     color: white !important;
 }
 
+
+
+
 /*Responsive-Tablet*/
 @media screen and (min-width:991px) and (max-width:1199px) {
 
+    /*ChefHeader-Top*/
+    .chefheader {
+        text-align: justify;
+        width: 43%;
+    }
     .cheftop h1 {
         margin-top: 17%;
     }
 
-    /*Bottom-Form-Header*/
-    .chefheader {
-        text-align: justify;
-        width: 43%;
+    /*Bottom-Left_Content*/
+    .leftdecribe p {
+        font-size: 130%;
+        font-weight: 500;
+    }
+
+    .leftdecribe h3 {
+        font-size: 210%;
+        margin-top: 8%;
+    }
+
+    .leftdecribe img {
+        width: 100%;
     }
 
     /*Bottom-Right_Content*/
@@ -262,22 +280,10 @@ li {
         padding-bottom: 15%;
         margin-bottom: 7%;
     }
-
-    /*Bottom-Left_Content*/
-    .leftdecribe p {
-        font-size: 130%;
-        font-weight: 500;
-    }
-
-    .leftdecribe h3 {
-        font-size: 210%;
-        margin-top: 8%;
-    }
-
-    .leftdecribe img {
-        width: 100%;
-    }
 }
+
+
+
 @media screen and (max-width:991px) {
 
     /*Chef Header*/
@@ -307,33 +313,29 @@ li {
         padding-right: 0;
         margin-top: 8%;
     }
-
 }
+
+
 @media screen and (max-width:768px) {
 
     /*Chef Header*/
-    .chefheader {
-        margin-top: 7%;
-    }
+    .chefheader {margin-top: 7%;}
+    .cheftop h1 {font-size: 380%;}
+    .cheftop h5 {font-size: 140%;}
 
-    .cheftop h1 {
-        font-size: 380%;
-    }
-    
-    .cheftop h5 {
-        font-size: 140%;
-    }
-    .cheftitle h5 {
-        font-size: 174%;
-    }
+
     /*Bottom-Left_Content*/
     .leftdecribe p {
         font-size: 120%;
     }
-
     .leftdecribe h3 {
         font-size: 200%;
     }
+
+    /*Bottom-Right_TopChef*/
+    .cheftitle h5 {
+        font-size: 174%;
+    }    
     .cheftitle h1 {
         font-size: 368%;
     }
