@@ -46,18 +46,6 @@ body {
     right: 3%;
 }
 
-/*Logo*/
-svg {
-    width: 100%;
-}
-rect { fill: #FE0304; }
-text { 
-  font-size: 40px;
-	font-weight: 100; 
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	fill: rgb(244, 173, 41);
-}
 /*Bottom-Form-Header*/
 .headerform {
     display: flex;
