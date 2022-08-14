@@ -4,7 +4,7 @@ body {
 
 /*Header*/
 .sidenav {
-    height: 200%;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -38,10 +38,11 @@ body {
 
 .navb {
     display: flex;
+    height: 100%;
 }
 
 .navbar svg {
-    width: 70%;
+    width: 200px;
 }
 rect { fill: #FE0304; }
 text { 
@@ -54,6 +55,7 @@ text {
 
 .image-col {
     display: flex;
+    height: 50%;
 }
 
 .menu-link {
@@ -206,7 +208,7 @@ span {
     color: white;
 }
 /*Footer-Logo*/
-.footer svg { width: 100%; }
+.footer svg { width: 315px; }
 rect { fill: #FE0304; }
 text { 
   font-size: 40px;
@@ -217,7 +219,7 @@ text {
 }
 .footer .flogo{
     position: absolute;
-    bottom: 65%;
+    bottom: 62%;
     width: 90%;
     left: 5%;
 }
@@ -264,7 +266,7 @@ text {
         width: 60%;
     }
     .navbar svg {
-        width: 65%;
+        width: 130px;
     }
     #main {
         font-size: 180%;
