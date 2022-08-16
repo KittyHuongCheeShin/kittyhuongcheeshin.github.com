@@ -25,133 +25,52 @@
     <div class="desktop">
         <div class="fourcol row">
 
-            <!--Menu-->
-            <div class="menu">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="navb">
-                        <div class="image" id="home">
-                            <div class="image-col">
-                                <img id="b1" src="images/m1.jpg" width="50%">
-                                <img id="b2" src="images/m2.jpg" width="50%">
-                            </div>
-                            <div class="image-col">
-                                <img id="b3" src="images/m3.jpg" width="50%">
-                                <img id="b4" src="images/m4.jpg" width="50%">
-                            </div>
-                        </div>
+            <!--Column-->
 
-                        <!--Japan-->
-                        <div class="image" id="j-img">
-                            <div class="image-col">
-                                <div id="j-dessert" class="dessert">
-                                    <a href="../groupassignment/japan/j_japan.html">Main</a>
-                                    <a href="../groupassignment/japan/j_wagashi.html">Wagashi</a>
-                                    <a href="../groupassignment/japan/j_anmitsu.html">Anmitsu</a>
-                                    <a href="../groupassignment/japan/j_mochi.html">Mochi</a>
-                                </div>
-                                <img src="images/jd1.jpg" width="50%">
-                            </div>
-                            <div class="image-col">
-                                <img src="images/jd2.jpg" width="50%">
-                                <img src="images/jd3.jpg" width="50%">
-                            </div>
-                        </div>
-
-                        <!--France-->
-                        <div class="image" id="f-img">
-                            <div class="image-col">
-                                <img src="images/fd1.jpg" width="50%">
-                                <img src="images/fd2.jpg" width="50%">
-                            </div>
-                            <div class="image-col">
-                                <div id="f-dessert" class="dessert">
-                                    <a href="../groupassignment/france/f_country.html">Main</a>
-                                    <a href="../groupassignment/france/f_mousse.html">Mousse</a>
-                                    <a href="../groupassignment/france/f_napoleon.html">Napoleon</a>
-                                    <a href="../groupassignment/france/f_parisbrest.html">Paris-Brest</a>
-                                </div>
-                                <img src="images/fd3.jpg" width="50%">
-                            </div>
-                        </div>
-
-                        <!--Italy-->
-                        <div class="image" id="i-img">
-                            <div class="image-col">
-                                <img src="images/id1.jpg" width="50%">
-                                <img src="images/id2.jpg" width="50%">
-                            </div>
-                            <div class="image-col">
-                                <img src="images/id3.jpg" width="50%">
-                                <div id="i-dessert" class="dessert">
-                                    <a href="../groupassignment/italy/indexitaly.html">Main</a>
-                                    <a href="../groupassignment/italy/indexd1.html">Affogato</a>
-                                    <a href="../groupassignment/italy/indexd2.html">Panettone</a>
-                                    <a href="../groupassignment/italy/indexd3.html">Tiramisu</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--China-->
-                        <div class="image" id="c-img">
-                            <div class="image-col">
-                                <img src="images/cd1.jpg" width="50%">
-                                <div id="c-dessert" class="dessert">
-                                    <a href="../groupassignment/china/c_countrypage.html">Main</a>
-                                    <a href="#">Dragon Beard Candy</a>
-                                    <a href="#">Sugar-Coated Haws</a>
-                                    <a href="#">Yang Zhi Gan Lu</a>
-                                </div>
-                            </div>
-                            <div class="image-col">
-                                <img src="images/cd2.jpg" width="50%">
-                                <img src="images/cd3.jpg" width="50%">
-                            </div>
-                        </div>
-
-                        <div class="menu-link">
-                            <a id="home" href="index.html">Home</a>
-                            <a id="hoverme-j" href="#">Japan</a>
-                            <a id="hoverme-f" href="#">France</a>
-                            <a id="hoverme-i" href="#">Italy</a>
-                            <a id="hoverme-c" href="#">China</a>
-                            <a id="chef" href="indexchef.html">Chef</a>
-                            <a id="contact" href="indexcontact.html">Contact</a>
-                        </div>
-
+            <!--Japan-->
+            <div class="japan overlayimg-container country col">
+                <a href="../groupassignment/japan/j_japan.html">
+                    <div class="middle">
+                        <div class="text">Japan</div>
                     </div>
-                </div>
-
-                <div id="main">
-                    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-                </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="left" data-bs-content=" <ul> <li><a href='japan/j_wagashi.html'>Wagashi</a></li> <li><a href='japan/j_anmitsu.html'>Anmitsu</a></li> <li><a href='japan/j_mochi.html'>Mochi</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
+            
+            <!--France-->
+            <div class="overlayimg-container france country col">
+                <a href="../groupassignment/france/f_country.html">
+                    <div class="middle">
+                        <div class="text">France</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="left" data-bs-content=" <ul> <li><a href='france/f_mousse.html'>Mousse</a></li> <li><a href='france/f_napoleonhtml.html'>Napoleon</a></li> <li><a href='france/f_parisbrest.html'>Paris-Brest</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
             </div>
 
+            <!--Italy-->
+            <div class="overlayimg-container italy country col">
+                <a href="../groupassignment/italy/indexitaly.html">
+                    <div class="middle">
+                        <div class="text">Italy</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="left" data-bs-content=" <ul> <li><a href='italy/indexd1.html'>Affogato</a></li> <li><a href='italy/indexd2.html'>Panettone</a></li> <li><a href='italy/indexd3.html'>Tiramisu</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
 
+            <!--China-->
+            <div class="overlayimg-container china country col">
+                <a href="../groupassignment/china/c_countrypage.html">
+                    <div class="middle">
+                        <div class="text">China</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="left" data-bs-content=" <ul> <li><a href=''>Dragon Beard Candy</a></li> <li><a href=''>Sugar-Coated Haws</a></li> <li><a href=''>Yang Zhi Gan Lu</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
 
-
-
-            <!--Column-->
-            <a href="../groupassignment/japan/j_japan.html" class="overlayimg-container japan country col">
-                <div class="middle">
-                    <div class="text">Japan</div>
-                </div>
-            </a>
-            <a href="../groupassignment/france/f_country.html" class="overlayimg-container france country col">
-                <div class="middle">
-                    <div class="text">France</div>
-                </div>
-            </a>
-            <a href="../groupassignment/italy/indexitaly.html" class="overlayimg-container italy country col">
-                <div class="middle">
-                    <div class="text">Italy</div>
-                </div>
-            </a>
-            <a href="../groupassignment/china/c_countrypage.html" class="overlayimg-container china country col">
-                <div class="middle">
-                    <div class="text">China</div>
-                </div>
-            </a>
             <div class="logo">
                 <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
@@ -186,26 +105,52 @@
 
     <div class="tablet">
         <div class="fourcol row">
-            <a href="../groupassignment/japan/j_japan.html" class="tcontainer japan country col">
-                <div class="tcontent">
-                    <div class="ttext">Japan</div>
-                </div>
-            </a>
-            <a href="../groupassignment/france/f_country.html" class="tcontainer france country col">
-                <div class="tcontent">
-                    <div class="ttext">France</div>
-                </div>
-            </a>
-            <a href="../groupassignment/italy/indexitaly.html" class="tcontainer italy country col">
-                <div class="tcontent">
-                    <div class="ttext">Italy</div>
-                </div>
-            </a>
-            <a href="../groupassignment/china/c_countrypage.html" class="tcontainer china country col">
-                <div class="tcontent">
-                    <div class="ttext">China</div>
-                </div>
-            </a>
+
+            <!--Japan-->
+            <div class="ttcontainer japan country col">
+                <a href="../groupassignment/japan/j_japan.html">
+                    <div class="tcontent">
+                        <div class="ttext">Japan</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='japan/j_wagashi.html'>Wagashi</a></li> <li><a href='japan/j_anmitsu.html'>Anmitsu</a></li> <li><a href='japan/j_mochi.html'>Mochi</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
+
+            <!--France-->
+            <div class="ttcontainer france country col">
+                <a href="../groupassignment/france/f_country.html" >
+                    <div class="tcontent">
+                        <div class="ttext">France</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='france/f_mousse.html'>Mousse</a></li> <li><a href='france/f_napoleonhtml.html'>Napoleon</a></li> <li><a href='france/f_parisbrest.html'>Paris-Brest</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
+
+            <!--Italy-->
+            <div class="ttcontainer italy country col">
+                <a href="../groupassignment/italy/indexitaly.html" >
+                    <div class="tcontent">
+                        <div class="ttext">Italy</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='italy/indexd1.html'>Affogato</a></li> <li><a href='italy/indexd2.html'>Panettone</a></li> <li><a href='italy/indexd3.html'>Tiramisu</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
+
+            <!--China-->
+            <div class="ttcontainer china country col">
+                <a href="../groupassignment/china/c_countrypage.html" >
+                    <div class="tcontent">
+                        <div class="ttext">China</div>
+                    </div>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href=''>Dragon Beard Candy</a></li> <li><a href=''>Sugar-Coated Haws</a></li> <li><a href=''>Yang Zhi Gan Lu</a></li>" data-bs-html="true"><img src="images/mp_submenu.png">
+                </button>
+            </div>
+
+
             <div class="logo">
                 <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
@@ -238,37 +183,67 @@
     </div>
 
     <div class="mobile">
+        <!--Top Row-->
         <div class="mfourcol row">
-            <a href="../groupassignment/japan/j_japan.html" class="tcontainer japan country col">
-                <div class="tcontent">
-                    <div class="ttext-1">
-                        <h1>Japan</h1>
+
+            <!--Japan-->
+            <div class="tcontainer japan country col">
+                <a href="../groupassignment/japan/j_japan.html">
+                    <div class="tcontent">
+                        <div class="ttext-1">
+                            <h1>Japan</h1>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="../groupassignment/france/f_country.html" class="tcontainer france country col">
-                <div class="tcontent">
-                    <div class="ttext-1">
-                        <h1>France</h1>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='japan/j_wagashi.html'>Wagashi</a></li> <li><a href='japan/j_anmitsu.html'>Anmitsu</a></li> <li><a href='japan/j_mochi.html'>Mochi</a></li>" data-bs-html="true"><img src="images/mp_submenuwhite.png">
+                </button>
+            </div>
+
+            <!--France-->
+            <div class="tcontainer france country col">
+                <a href="../groupassignment/france/f_country.html">
+                    <div class="tcontent">
+                        <div class="ttext-1">
+                            <h1>France</h1>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='france/f_mousse.html'>Mousse</a></li> <li><a href='france/f_napoleonhtml.html'>Napoleon</a></li> <li><a href='france/f_parisbrest.html'>Paris-Brest</a></li>" data-bs-html="true"><img src="images/mp_submenuwhite.png">
+                </button>
+            </div>
+
         </div>
+
+        <!--Bottom Row-->
         <div class="mfourcol row d-flex flex-wrap">
-            <a href="../groupassignment/italy/indexitaly.html" class="tcontainer italy country col">
-                <div class="tcontent-1">
-                    <div class="ttext-1">
-                        <h1>Italy</h1>
+
+            <!--Italy-->
+            <div class="tcontainer italy country col">
+                <a href="../groupassignment/italy/indexitaly.html">
+                    <div class="tcontent-1">
+                        <div class="ttext-1">
+                            <h1>Italy</h1>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="../groupassignment/china/c_countrypage.html" class="tcontainer china country col">
-                <div class="tcontent-1">
-                    <div class="ttext-1">
-                        <h1>China</h1>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href='italy/indexd1.html'>Affogato</a></li> <li><a href='italy/indexd2.html'>Panettone</a></li> <li><a href='italy/indexd3.html'>Tiramisu</a></li>" data-bs-html="true"><img src="images/mp_submenuwhite.png">
+                </button>
+            </div>
+
+
+            <!--China-->
+            <div  class="tcontainer china country col">
+                <a href="../groupassignment/china/c_countrypage.html">
+                    <div class="tcontent-1">
+                        <div class="ttext-1">
+                            <h1>China</h1>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <button type="button" class="submenu" data-bs-toggle="popover" data-bs-title="Dessert Menu"  data-bs-placement="top" data-bs-content=" <ul> <li><a href=''>Dragon Beard Candy</a></li> <li><a href=''>Sugar-Coated Haws</a></li> <li><a href=''>Yang Zhi Gan Lu</a></li>" data-bs-html="true"><img src="images/mp_submenuwhite.png">
+                </button>
+            </div>
+
         </div>
         <div class="logo">
             <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
@@ -337,6 +312,11 @@
                 },
             });
         });
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
     </script>
 </body>
 
