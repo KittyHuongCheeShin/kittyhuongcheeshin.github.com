@@ -1,5 +1,6 @@
-body {
+html, body {
     font-family: 'Asar', serif !important;
+    height: 100%;
 }
 
 /*Header*/
@@ -64,12 +65,15 @@ text {
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    height: 100%;
 }
 .dessert {
     width: 40%;
+    height: 100%;
 }
 .image {
     width: 50%;
+    height: 100%;
 }
 
 #main {
@@ -81,45 +85,66 @@ text {
 #main span {
     position: static;
 }
+#b1 {
+    background-image: url(../image/menu/m1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+#b2 {
+    background-image: url(../image/menu/m2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+#b3 {
+    background-image: url(../image/menu/m3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+#b4 {
+    background-image: url(../image/menu/m4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
 
+/*Japan*/
 #j-img {
     display: none;
     background-color: #111;
 }
+#j1 {
+    background-image: url(../image/menu/jd1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#j2 {
+    background-image: url(../image/menu/jd2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#j3 {
+    background-image: url(../image/menu/jd3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
 #j-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-#f-img {
-    display: none;
-    background-color: #111;
-}
-#f-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-#i-img {
-    display: none;
-    background-color: #111;
-}
-#i-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-#c-img {
-    display: none;
-    background-color: #111;
-}
-#c-dessert {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,17 +157,120 @@ text {
 #j-dessert a:hover{
     color: pink !important;
 }
+
+/*France*/
+#f-img {
+    display: none;
+    background-color: #111;
+}
+#f1 {
+    background-image: url(../image/menu/fd1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#f2 {
+    background-image: url(../image/menu/fd2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#f3 {
+    background-image: url(../image/menu/fd3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#f-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
 #f-dessert a{
     font-size: 176%;
 }
 #f-dessert a:hover{
     color: rgb(212, 113, 77) !important;
 }
+
+/*Italy*/
+#i-img {
+    display: none;
+    background-color: #111;
+}
+#i1 {
+    background-image: url(../image/menu/id1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+}
+#i2 {
+    background-image: url(../image/menu/id2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#i3 {
+    background-image: url(../image/menu/id3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#i-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
 #i-dessert a{
     font-size: 176%;
 }
 #i-dessert a:hover{
     color: beige !important;
+}
+
+/*China*/
+#c-img {
+    display: none;
+    background-color: #111;
+}
+#c1 {
+    background-image: url(../image/menu/cd1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#c2 {
+    background-image: url(../image/menu/cd2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#c3 {
+    background-image: url(../image/menu/cd3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+#c-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 #c-dessert a{
     font-size: 176%;
