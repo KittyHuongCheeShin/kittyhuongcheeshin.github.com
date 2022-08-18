@@ -292,7 +292,7 @@ text {
 }
 
 /*Responsive- tablet */
-@media screen and (max-width:912px) {
+@media screen and (max-width:1000px) {
     .navbar2 {
         display: block !important;
     }
