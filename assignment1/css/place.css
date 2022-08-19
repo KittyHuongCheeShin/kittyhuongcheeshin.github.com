@@ -344,7 +344,7 @@ i {
         margin-bottom: 6%;
     }
     #mpcontent h1 {
-        font-size: 380%;
+        font-size: 360%;
         padding-right: 5%;
     }
 
@@ -357,7 +357,10 @@ i {
         margin-bottom: 8%;
         margin-top: 5%;
     }
-    .bestplacecontent .pimage {width: 108%;}
+    .bestplacecontent .pimage {
+        width: 108%;
+        margin-left: 7%;
+    }
     .pimage img{
         border-radius: 10px;
         width: 115%;
@@ -381,7 +384,10 @@ i {
         padding-top: 10%;
         padding-bottom: 10%;
     }
-    .bestplacecontent1 .pimage {width: 78%;}
+    .bestplacecontent1 .pimage {
+        width: 78%;
+        margin-left: 7%;
+    }
     .bestplacecontent1 .ptext {
         width: 80%;
     }

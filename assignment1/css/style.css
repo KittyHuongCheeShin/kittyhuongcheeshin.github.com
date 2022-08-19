@@ -523,6 +523,9 @@ i {
 }
 
 @media screen and (max-width:500px) {
+
+    #mpcontent h1 {font-size: 380%;}
+
     .contentb img {
         height: 250px;
         object-fit: cover;
