@@ -25,7 +25,7 @@ p {
 /*Story-Part*/
 .bigb {
     margin-top: 5%;
-    background-image: url("../images/i_frame-top.png");
+    background-image: url("../images/italy-frame-top.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 21%;
@@ -64,7 +64,7 @@ p {
 
 /*Receipe-Part*/
 .receipebigbox {
-    background-image: url("../images/i_frame-bottom.png");
+    background-image: url("../images/italy-frame-bottom.png");
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 21%;
@@ -78,7 +78,7 @@ p {
     padding-left: 3%;
 }
 .receipe h3 {
-    font-size: 200%;
+    font-size: 180%;
     font-weight: 600;
     font-style: italic;
 }
@@ -121,16 +121,19 @@ p {
 .ingrebottom .title img {
     width: 7%;
 }
+.ingrebottom .fruit {
+    margin-top: 2%;
+}
 .ingrebottom .fruittitle img {
     width: 6%;
-    margin-left: 2%;
+    margin-right: 2%;
 }
 .doughtitle, .panetitle {
     margin-top: 5%;
 }
 .ingrebottom .doughtitle img, .ingrebottom .panetitle img {
     width: 5%;
-    margin-left: 2%;
+    margin-right: 2%;
 }
 
 
@@ -201,7 +204,7 @@ p {
     margin-bottom: 3%;
 }
 .restitle {
-    background-image: url("../images/i_line.png");
+    background-image: url("../images/italyline.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -441,11 +444,11 @@ p {
     }
     .ingrebottom .fruittitle img {
         width: 10%;
-        margin-left: 2%;
+        margin-right: 2%;
     }
     .ingrebottom .doughtitle img, .ingrebottom .panetitle img {
         width: 9%;
-        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .accordion-body img {
@@ -531,7 +534,7 @@ p {
         padding-bottom: 20%;
     }
     .receipe h3 {
-        font-size: 180%;
+        font-size: 150%;
     }
     /*Ingredient-Top*/
     .ingretop {
@@ -559,11 +562,11 @@ p {
     }
     .ingrebottom .fruittitle img {
         width: 15%;
-        margin-left: 2%;
+        margin-right: 2%;
     }
     .ingrebottom .doughtitle img, .ingrebottom .panetitle img {
         width: 13%;
-        margin-left: 2%;
+        margin-right: 2%;
     }
     .ingrebottom .accordion-body  {
         flex-direction: column-reverse;

@@ -159,6 +159,10 @@ text {
     color:#FE0304 !important;
 }
 
+.image-col img{
+    object-fit: cover;
+}
+
 span {
     position: absolute;
     left: 50%;
@@ -189,12 +193,16 @@ span {
     color: #bababa;
 }
 
+.popover-body a {
+    color: #111  !important;
+    text-decoration: none;
+}
 
 /*Footer*/
 .footer {
     background-color: #4C4751;
     position: relative;
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 .footer a {
@@ -346,7 +354,6 @@ text {
     /*Footer-Logo*/
     .footer .flogo{
         bottom: 86%;
-        left: 5%;
     }
     .footer svg { width: 294px; }
 }
