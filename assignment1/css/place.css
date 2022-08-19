@@ -13,7 +13,7 @@ a:hover {
 
 /*Places-MainPage*/
 #mainpagepl {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/switzerlandplace.jpg);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +314,7 @@ i {
 
     /*Places-MainPage*/
     #mainpagepl {
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/places/placemp-1.jpg);
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/switzerlandplacesmall.jpg);
     }
     /*P-MP-Header*/
     #header {margin-top: 5%;}

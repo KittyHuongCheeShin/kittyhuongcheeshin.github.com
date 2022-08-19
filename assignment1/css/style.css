@@ -13,7 +13,7 @@ a:hover {
 
 /*MainPage*/
 #mainpage {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/mainpage/mainbackground.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../images/switzerland.jpg);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;

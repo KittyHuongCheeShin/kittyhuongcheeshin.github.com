@@ -11,7 +11,7 @@ a:hover {animation: .5s horizontal-shaking infinite alternate;}
 
 /*Trains-MainPage*/
 #mainpagetr {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/trains/trainsbanner-1.1.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/switzerlandtrain.jpg);
     mix-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,12 +210,12 @@ i {
     align-items: center;
 }
 .upright .distance img {
-    width: 28%;
+    width: 16%;
     height: 70%;
     margin-right: 2%;
 }
 .upright .duration img {
-    width: 12%;
+    width: 20%;
     height: 70%;
     margin-right: 2%;
 }
@@ -416,7 +416,7 @@ i {
     }
     .upright .distance {width: 30%;}
     .upright .duration {width: 30%;}
-    .upright .duration img {
+    .upright .duration img, .upright .distance img {
         width: 28%;
         height: 90%;
     }
@@ -430,13 +430,15 @@ i {
     .fmenu .foodsb {padding-right: 10px;}
 }
 
-
+@media screen and (max-width:500px) {
+    .route .timeline {display: none;}
+}
 
 /*Mobile screen size*/
 @media screen and (max-width:700px) {
 
     #mainpagetr {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/trains/trainsbanner.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/switzerlandtrainsmall.jpg);
     }
 
     /*Trains-MainPage-Header*/
@@ -482,7 +484,7 @@ i {
     /*Train-Slide-Content*/
     .slidecontent h3 {font-size: 150%;}
     .slidecontent p {font-size: 115%;}
-    .timeline li:after {font-size: 90%;}
+
 
     /*Footer*/
     .fmenu {
