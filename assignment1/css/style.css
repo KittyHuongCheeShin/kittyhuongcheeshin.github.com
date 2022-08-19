@@ -233,6 +233,11 @@ i {
     margin-right: 3%;
 }
 
+.contentb img {
+    height: 250px;
+    object-fit: cover;
+}
+
 
 /*Travel Info*/
 #tinfo {
@@ -368,6 +373,11 @@ i {
     justify-content: center;}
     .contentb {width: 40%;}
 
+    .contentb img {
+        height: 280px;
+        object-fit: cover;
+    }
+
     /*TravelInfo*/
     #tinfo p{
         font-size: 180%;
@@ -445,6 +455,11 @@ i {
     }
     .contentb {width: 75%;}
 
+    .contentb img {
+        height: 340px;
+        object-fit: cover;
+    }
+
     /*TravelInfo*/
     #tinfo {
         padding-bottom: 10%;
@@ -505,4 +520,12 @@ i {
         padding-bottom: 4%;
         font-size: 100%;
     }
+}
+
+@media screen and (max-width:500px) {
+    .contentb img {
+        height: 250px;
+        object-fit: cover;
+    }
+    
 }
